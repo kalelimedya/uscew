@@ -111,7 +111,7 @@
         </div>
         <div class="col-auto ml-auto d-flex d-lg-none">
           <a href="#" id="header-mobile-menu-switch" aria-label="admin/front/general.menu.open">
-            <i class="fad fa-bars"></i>
+            <i class="fad fa-bars" style="color:black;"></i>
           </a>
         </div>
         <div class="col col-mr-auto align-items-center justify-content-center d-none d-lg-flex h-100">

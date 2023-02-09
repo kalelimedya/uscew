@@ -65,10 +65,10 @@
           </div>
         </div>
        <div class="owl-nav owl-fa-nav">
-          <a href="#" class="owl-prev">
+          <a href="#" class="owl-prev" style="background-color:black;border:1px solid white;border-radius:3px;">
             <i class="fad fa-chevron-left"></i>
           </a>
-          <a href="#" class="owl-next">
+          <a href="#" class="owl-next" style="background-color:black;border:1px solid white;border-radius:3px;">
             <i class="fad fa-chevron-right"></i>
           </a>
         </div>

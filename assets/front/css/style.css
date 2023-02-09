@@ -11071,7 +11071,7 @@ body.header-sticky {
 
 .owl-fa-nav>a:hover {
     background: 0 0;
-    color: #ee3b68
+    color: white;
 }
 
 .home-slider-section .owl-nav>a:first-child {
@@ -11978,7 +11978,7 @@ body.header-sticky {
         position: fixed;
         top: 0;
         right: -300px;
-        background-color: #ee3b68;
+        background-color: black;
         width: 300px;
         height: 100%;
         max-width: 100%;
