@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110">
+    <g fill="none" fill-rule="nonzero">
+        <path d="M0 0h110v110H0z"/>
+        <g transform="translate(4 4)">
+            <path d="M0 0h104v104H0z"/>
+            <path fill="#EE3B68" d="M48 42v8h33v-8H48zm-2-4h37a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H46a2 2 0 0 1-2-2V40a2 2 0 0 1 2-2z"/>
+            <rect width="37" height="1" x="46" y="60" stroke="#EE3B68" stroke-width="4" rx=".5"/>
+            <rect width="13" height="1" x="70" y="68" stroke="#EE3B68" stroke-width="4" rx=".5"/>
+            <path fill="#EE3B68" d="M23 70c-6.075 0-11-4.925-11-11s4.925-11 11-11 11 4.925 11 11-4.925 11-11 11zm0-4a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM41 92a2 2 0 1 1-4 0c0-7.732-6.268-14-14-14S9 84.268 9 92a2 2 0 1 1-4 0c0-9.941 8.059-18 18-18s18 8.059 18 18z"/>
+            <path fill="#EE3B68" d="M25 29a2 2 0 1 1-4 0v-9a6 6 0 0 1 6-6h61a6 6 0 0 1 6 6v61a6 6 0 0 1-6 6H49a2 2 0 1 1 0-4h39a2 2 0 0 0 2-2V20a2 2 0 0 0-2-2H27a2 2 0 0 0-2 2v9z"/>
+            <circle cx="49" cy="25" r="2" fill="#EE3B68"/>
+            <circle cx="41" cy="25" r="2" fill="#EE3B68"/>
+            <circle cx="33" cy="25" r="2" fill="#EE3B68"/>
+        </g>
+    </g>
+</svg>
