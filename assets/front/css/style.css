@@ -12251,7 +12251,6 @@ body.header-sticky {
         left: 0;
         right: 0;
         bottom: 0;
-        background: #ee3b68;
         transform-origin: bottom right;
         transform: scaleX(0);
         transition: transform .3s cubic-bezier(.75, 0, .175, 1);
