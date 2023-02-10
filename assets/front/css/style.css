@@ -13047,41 +13047,37 @@ textarea.form-control {
     font-family: Campton, sans-serif
 }
 
-footer .fixed-whatsapp {
-    position: fixed;
-    bottom: 100px;
-    left: 82px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    background: #25d366;
-    transition: all .3s
+
+.home-slider-section .image-col .image {
+    position: relative
 }
 
-footer .fixed-whatsapp img {
-    width: 20px
+
+.home-slider-section .owl-nav {
+    display: none
 }
 
-footer .fixed-whatsapp:hover {
-    background: #ee3b68;
-    transition: all .3s
+.home-slider-section #home-slider-owl-carousel {
+    margin-bottom: 64px;
+    margin-top: 64px;
 }
 
-@media(max-width:991.98px) {
-    footer .fixed-whatsapp {
-        right: 96px;
-        left: auto;
-        bottom: 160px
-    }
+.home-slider-section .image-col {
+    padding: 0;
 }
 
-@media(max-width:767.98px) {
-    footer .fixed-whatsapp {
-        right: 25px;
-        margin-bottom: 17px;
-        bottom: 140px
-    }
+.home-slider-section #home-slider-owl-carousel h1 {
+    font-size: 24px;
+}
+
+.home-slider-section .owl-nav {
+    display: none;
+}
+
+.home-slider-section .slider-col {
+    padding: 0;
+}
+
+.home-slider-section .image img {
+    width: 100%
 }

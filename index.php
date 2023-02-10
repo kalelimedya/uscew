@@ -36,7 +36,7 @@
         </div>
       </div>
     </section>
-<section class="home-slider-section">
+<section class="home-slider-section" style="margin-bottom:-20px;">
   <div class="container">
     <div class="row">
       
@@ -77,7 +77,7 @@
     </div>
   </section>
 
-    <section class="references-home-section">
+    <section class="references-home-section" style="margin-bottom:-120px;">
       <div class="container">
         <div class="row top">
           <p class="col col-mr-auto title scaled-p">Projelerimiz</p>
@@ -156,6 +156,7 @@
       </section>
         <section class="information-section">
           <div class="container">
+            <h1 style="margin-bottom:30px;">Teklif Alın & Soru Sorun</h1>
             <div class="row">
               <div class="col-12">
                 <ul class="left-menu cs-menu-area">
