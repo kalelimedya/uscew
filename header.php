@@ -30,7 +30,7 @@
           <div class="row">
             <div class="col">
               <ul class="header-mobil-menu">
-                <li class="d-lg-none d-xxl-block  active ">
+                <li class="d-lg-none d-xxl-block">
                   <a href="index.php">
                     İşlerimiz
                   </a>
@@ -118,7 +118,7 @@
         </div>
         <div class="col col-mr-auto align-items-center justify-content-center d-none d-lg-flex h-100">
           <ul class="header-menu">
-            <li class="d-lg-none d-xxl-block active">
+            <li class="d-lg-none d-xxl-block">
               <a href="index.php">
                 İşlerimiz
               </a>
