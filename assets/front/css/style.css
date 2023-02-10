@@ -11000,11 +11000,6 @@ body.header-sticky {
     border-color: #fedce0
 }
 
-.home-slider-section {
-    background-color: #22427d;
-    color: #fff;
-    margin-bottom: 100px
-}
 
 #home-slider-owl-carousel-ow {
     height: 100%
@@ -11016,31 +11011,6 @@ body.header-sticky {
     align-items: center
 }
 
-.home-slider-section h1 {
-    line-height: 1.4
-}
-
-.home-slider-section .image:before {
-    content: " ";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(270deg, rgba(249, 78, 97, 0), rgba(249, 78, 97, .6))
-}
-
-.home-slider-section .owl-nav {
-    text-align: right;
-    position: absolute;
-    width: calc(100% - 24px);
-    bottom: 40px
-}
-
-
-.home-slider-section .owl-nav>a:first-child {
-    margin-right: 24px
-}
 
 .information-section .owl-nav>a:first-child {
     margin-right: 30px
@@ -11061,9 +11031,6 @@ body.header-sticky {
     padding: 0
 }
 
-.home-slider-section .image-col .image {
-    position: relative
-}
 
 .home-slider-offer-button {
     line-height: 24px;
@@ -11696,18 +11663,6 @@ body.header-sticky {
         padding: 24px 0 40px
     }
 
-    .home-slider-section .owl-nav {
-        display: none
-    }
-
-    .home-slider-section #home-slider-owl-carousel {
-        margin-bottom: 64px;
-        margin-top: 64px
-    }
-
-    .home-slider-section .image-col {
-        padding: 0
-    }
 
     .home-slider-offer-button {
         font-size: 3.8vw;
@@ -12082,9 +12037,7 @@ body.header-sticky {
         justify-content: space-between
     }
 
-    .home-slider-section .image img {
-        width: 100%
-    }
+   
 
     .home-slider-offer-button {
         letter-spacing: unset;
@@ -12325,17 +12278,6 @@ body.header-sticky {
         margin-top: 12px
     }
 
-    .home-slider-section #home-slider-owl-carousel h1 {
-        font-size: 24px
-    }
-
-    .home-slider-section .owl-nav {
-        display: none
-    }
-
-    .home-slider-section .slider-col {
-        padding: 0
-    }
 
     .home-slider-offer-button {
         font-size: 2.3vw
@@ -12352,32 +12294,6 @@ body.header-sticky {
 
     .product-checkbox-row>div:nth-child(3n) {
         padding-left: 4px
-    }
-}
-
-@media(min-width:768px) and (max-width:991.98px) {
-    .home-slider-section #home-slider-owl-carousel h1 {
-        font-size: 36px
-    }
-
-    .home-slider-offer-button {
-        font-size: 2vw
-    }
-}
-
-@media(min-width:992px) and (max-width:1199.98px) {
-    .home-slider-section #home-slider-owl-carousel h1 {
-        font-size: 44px
-    }
-}
-
-
-@media(max-width:1299.98px) {
-    .home-slider-section .container.container-xl {
-        padding-right: 0;
-        padding-left: 0;
-        width: 100%;
-        max-width: 100%
     }
 }
 

@@ -36,7 +36,7 @@
         </div>
       </div>
     </section>
-<section class="home-slider-section" style="background-color:black;">
+<section class="home-slider-section">
   <div class="container">
     <div class="row">
       
