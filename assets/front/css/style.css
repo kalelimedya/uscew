@@ -11055,24 +11055,6 @@ body.header-sticky {
     bottom: 40px
 }
 
-.owl-fa-nav>a {
-    background-color: black;
-    padding: 8px!important;
-    border-radius: 6px;
-    display: inline-block;
-    transition: all .3s;
-    border: 2px solid whitesmoke;
-    position: relative;
-    width: 46px;
-    height: 46px;
-    text-align: center;
-    color: white;    
-}
-
-.owl-fa-nav>a:hover {
-    background: 0 0;
-    color: white;
-}
 
 .home-slider-section .owl-nav>a:first-child {
     margin-right: 24px
@@ -11403,16 +11385,6 @@ body.header-sticky {
 .fixed-buttons a.offer:hover {
     background-color: #e8e8e8;
     color: #22427d
-}
-
-.fixed-buttons a.up {
-    background-color: #e8e8e8;
-    color: #ee3b68
-}
-
-.fixed-buttons a.up:hover {
-    background-color: #ee3b68;
-    color: #fff
 }
 
 .fixed-buttons a i {
@@ -12143,23 +12115,6 @@ body.header-sticky {
     }
 }
 
-@media(min-width:576px) {
-    .home-slider-section>.container {
-        position: relative
-    }
-
-    .home-slider-section>.container:after {
-        position: absolute;
-        left: 0;
-        bottom: -32px;
-    }
-
-    .work-stages-button a {
-        padding-left: 30px;
-        padding-right: 30px
-    }
-}
-
 @media(min-width:768px) {
     .who-are-we {
         padding: 80px 32px 80px 64px;
@@ -12251,6 +12206,7 @@ body.header-sticky {
         left: 0;
         right: 0;
         bottom: 0;
+        background: #ee3b68;
         transform-origin: bottom right;
         transform: scaleX(0);
         transition: transform .3s cubic-bezier(.75, 0, .175, 1);
@@ -12433,30 +12389,6 @@ body.header-sticky {
     }
 }
 
-@media(min-width:1300px) {
-    .container.container-xl {
-        max-width: 1240px
-    }
-
-    .home-slider-section .container-button>.container.container-xl {
-        padding-right: 15px;
-        padding-left: 15px
-    }
-
-    .home-slider-offer-button {
-        padding-left: 50px;
-        padding-right: 50px
-    }
-
-    .container.container-xl>.row {
-        left: 35px;
-        position: relative
-    }
-
-    .home-slider-section>.container:after {
-        left: 65px
-    }
-}
 
 @media(max-width:1299.98px) {
     .home-slider-section .container.container-xl {

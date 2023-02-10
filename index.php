@@ -65,10 +65,10 @@
           </div>
         </div>
        <div class="owl-nav owl-fa-nav">
-          <a href="#" class="owl-prev" style="background-color:black;border:1px solid white;border-radius:3px;">
+          <a href="#" class="owl-prev">
             <i class="fad fa-chevron-left"></i>
           </a>
-          <a href="#" class="owl-next" style="background-color:black;border:1px solid white;border-radius:3px;">
+          <a href="#" class="owl-next">
             <i class="fad fa-chevron-right"></i>
           </a>
         </div>
@@ -82,155 +82,32 @@
         <div class="row top">
           <p class="col col-mr-auto title scaled-p">Projelerimiz</p>
         </div>
+        <!-- item -->
         <div class="row">
-          <div class="col-12 col-lg-6 col-xxl-6 reference-list-col">
+          <div class="col-12 col-lg-12 col-xxl-12 reference-list-col">
             <div class="reference-list-container" style="background-color: #104386">
               <p class="title">
-                <a href="https://kumsalajans.com/proje/web-yazilim/asil-dernegi-aselsan">
-                  Asil Derneği (ASELSAN)
+                <a href="">
+                    GoMekan
                 </a>
               </p>
-              <div class="description">
-                ASELSAN&#039;ın kurucu olduğu ASİL Derneği, UX (Kullanıcı Deneyimi) tasarımı ile yayın hayatına başladı.
-              </div>
-              <div class="image">
-                <a href="https://kumsalajans.com/proje/web-yazilim/asil-dernegi-aselsan">
+              <div class="row">
+                <div class="col-6 col-lg-6 col-xxl-6">
+                    <div class="description">
+                    ASELSAN'ın kurucu olduğu ASİL Derneği, UX (Kullanıcı Deneyimi) tasarımı ile yayın hayatına başladı.
+                  </div>
+                </div>
+                <div class="col-6 col-lg-6 col-xxl-6">
+                <div class="image">
+                <a href="gomekan.com">
                   <picture class="img-fluid">
-                    <source srcset="/storage/media/337/conversions/asil-dernek-crop-webp.webp 1x,
-                    /storage/media/337/conversions/asil-dernek-crop-webp@2x.webp 2x,
-                    /storage/media/337/conversions/asil-dernek-crop-webp@3x.webp 3x" type="image/webp">
-                    <source srcset="/storage/media/337/conversions/asil-dernek-crop.png 1x,
-                    /storage/media/337/conversions/asil-dernek-crop@2x.png 2x,
-                    /storage/media/337/conversions/asil-dernek-crop@3x.png 3x" type="">
-                    <img src="storage/media/337/conversions/asil-dernek-crop.png" class="img-fluid" alt="Asil Derneği (ASELSAN)">
+                    
                   </picture>
                 </a>
               </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 col-xxl-6 reference-list-col">
-            <div class="reference-list-container" style="background-color: #25d7ac">
-              <p class="title">
-                <a href="https://kumsalajans.com/proje/web-yazilim/umuda-kosanlar">
-                  Umuda Koşanlar
-                </a>
-              </p>
-              <div class="description">
-                Gamze Özçelik&#039;in yardımlaşma derneğinin web yazılım ve tasarım işleri halen devam ediyor.
+                </div>
               </div>
-              <div class="image">
-                <a href="https://kumsalajans.com/proje/web-yazilim/umuda-kosanlar">
-                  <picture class="img-fluid">
-                    <source srcset="/storage/media/197/conversions/umudakosanlar-web-25d7ac-slvn7cng-crop-webp.webp 1x,
-                    /storage/media/197/conversions/umudakosanlar-web-25d7ac-slvn7cng-crop-webp@2x.webp 2x,
-                    /storage/media/197/conversions/umudakosanlar-web-25d7ac-slvn7cng-crop-webp@3x.webp 3x" type="image/webp">
-                    <source srcset="/storage/media/197/conversions/umudakosanlar-web-25d7ac-slvn7cng-crop.png 1x,
-                    /storage/media/197/conversions/umudakosanlar-web-25d7ac-slvn7cng-crop@2x.png 2x,
-                    /storage/media/197/conversions/umudakosanlar-web-25d7ac-slvn7cng-crop@3x.png 3x" type="">
-                    <img src="storage/media/197/conversions/umudakosanlar-web-25d7ac-slvn7cng-crop.png" class="img-fluid" alt="Umuda Koşanlar">
-                  </picture>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 col-xxl-6 reference-list-col">
-            <div class="reference-list-container" style="background-color: #ec4c35">
-              <p class="title">
-                <a href="https://kumsalajans.com/proje/web-tasarim/alberk-poultry">
-                  Alberk Poultry
-                </a>
-              </p>
-              <div class="description">
-                Alberk Poultry, UX (Kullanıcı Deneyimi) web sitesi tasarımı tamamlandı.
-              </div>
-              <div class="image">
-                <a href="https://kumsalajans.com/proje/web-tasarim/alberk-poultry">
-                  <picture class="img-fluid">
-                    <source srcset="/storage/media/307/conversions/alberk-crop-webp.webp 1x,
-                    /storage/media/307/conversions/alberk-crop-webp@2x.webp 2x,
-                    /storage/media/307/conversions/alberk-crop-webp@3x.webp 3x" type="image/webp">
-                    <source srcset="/storage/media/307/conversions/alberk-crop.png 1x,
-                    /storage/media/307/conversions/alberk-crop@2x.png 2x,
-                    /storage/media/307/conversions/alberk-crop@3x.png 3x" type="">
-                    <img src="storage/media/307/conversions/alberk-crop.png" class="img-fluid" alt="Alberk Poultry">
-                  </picture>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 col-xxl-6 reference-list-col">
-            <div class="reference-list-container" style="background-color: #5eb8c3">
-              <p class="title">
-                <a href="https://kumsalajans.com/proje/web-tasarim/interra">
-                  İnterra
-                </a>
-              </p>
-              <div class="description">
-                İnterra için (UX), kullanıcı deneyimine uygun, bir web sitesi tasarladık.
-              </div>
-              <div class="image">
-                <a href="https://kumsalajans.com/proje/web-tasarim/interra">
-                  <picture class="img-fluid">
-                    <source srcset="/storage/media/480/conversions/interra-crop-webp.webp 1x,
-                    /storage/media/480/conversions/interra-crop-webp@2x.webp 2x,
-                    /storage/media/480/conversions/interra-crop-webp@3x.webp 3x" type="image/webp">
-                    <source srcset="/storage/media/480/conversions/interra-crop.png 1x,
-                    /storage/media/480/conversions/interra-crop@2x.png 2x,
-                    /storage/media/480/conversions/interra-crop@3x.png 3x" type="">
-                    <img src="storage/media/480/conversions/interra-crop.png" class="img-fluid" alt="İnterra">
-                  </picture>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 col-xxl-6 reference-list-col">
-            <div class="reference-list-container" style="background-color: #3f99ff">
-              <p class="title">
-                <a href="https://kumsalajans.com/proje/web-tasarim/ricon-mobile">
-                  Ricon Mobile
-                </a>
-              </p>
-              <div class="description">
-                Ricon Mobile, UX (Kullanıcı Deneyimi) tasarımı ile yayın hayatına başladı.
-              </div>
-              <div class="image">
-                <a href="https://kumsalajans.com/proje/web-tasarim/ricon-mobile">
-                  <picture class="img-fluid">
-                    <source srcset="/storage/media/182/conversions/ricon-web-3f99ff-crop-webp.webp 1x,
-                    /storage/media/182/conversions/ricon-web-3f99ff-crop-webp@2x.webp 2x,
-                    /storage/media/182/conversions/ricon-web-3f99ff-crop-webp@3x.webp 3x" type="image/webp">
-                    <source srcset="/storage/media/182/conversions/ricon-web-3f99ff-crop.png 1x,
-                    /storage/media/182/conversions/ricon-web-3f99ff-crop@2x.png 2x,
-                    /storage/media/182/conversions/ricon-web-3f99ff-crop@3x.png 3x" type="">
-                    <img src="storage/media/182/conversions/ricon-web-3f99ff-crop.png" class="img-fluid" alt="Ricon Mobile">
-                  </picture>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 col-xxl-6 reference-list-col">
-            <div class="reference-list-container" style="background-color: #2b83ce">
-              <p class="title">
-                <a href="https://kumsalajans.com/proje/web-yazilim/clinic-cell">
-                  Clinic Cell
-                </a>
-              </p>
-              <div class="description">
-                Clinic Cell web sitesi tasarımı ve portal yazılımı tamamlanıp, teslim edildi.
-              </div>
-              <div class="image">
-                <a href="https://kumsalajans.com/proje/web-yazilim/clinic-cell">
-                  <picture class="img-fluid">
-                    <source srcset="/storage/media/252/conversions/cliniccell-flwatve6-crop-webp.webp 1x,
-                    /storage/media/252/conversions/cliniccell-flwatve6-crop-webp@2x.webp 2x,
-                    /storage/media/252/conversions/cliniccell-flwatve6-crop-webp@3x.webp 3x" type="image/webp">
-                    <source srcset="/storage/media/252/conversions/cliniccell-flwatve6-crop.png 1x,
-                    /storage/media/252/conversions/cliniccell-flwatve6-crop@2x.png 2x,
-                    /storage/media/252/conversions/cliniccell-flwatve6-crop@3x.png 3x" type="">
-                    <img src="storage/media/252/conversions/cliniccell-flwatve6-crop.png" class="img-fluid" alt="Clinic Cell">
-                  </picture>
-                </a>
-              </div>
+              
             </div>
           </div>
         </div>

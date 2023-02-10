@@ -85,7 +85,7 @@
                   <i class="fad fa-phone"></i>
                 </a>
               </div>
-              <div class="col-12 d-none d-md-block">
+              <div class="yukari col-12 d-none d-md-block">
                 <a href="javascript:void(0);" class="scroll-top-body up">
                   <i class="fad fa-chevron-up"></i>
                 </a>
