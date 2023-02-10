@@ -10224,17 +10224,6 @@ body.header-sticky {
     border-color: #fff
 }
 
-.button.button-pink-white {
-    background-color: #ee3b68;
-    color: #fff;
-    border-color: #ee3b68
-}
-
-.button.button-pink-white:hover {
-    background-color: transparent;
-    color: #ee3b68;
-    border: 2px solid #ee3b68
-}
 
 .button.button-white-pink {
     background-color: #fff;
@@ -10909,13 +10898,6 @@ body.header-sticky {
 
 .left-menu>li.active>a {
     border-radius: 6px 6px 0 0
-}
-
-.left-menu>li.active>a,
-.left-menu>li:hover>a {
-    background-color: #ee3b68;
-    color: #fff;
-    border-left-color: #ee3b68
 }
 
 .left-menu>li>ul {
@@ -12462,12 +12444,7 @@ body.header-sticky {
     border: 0
 }
 
-.form-control:not([type=checkbox]):focus {
-    color: #000;
-    background-color: transparent;
-    outline: 0;
-    box-shadow: inset 0 -1px 0 0 #ee3b68
-}
+
 
 .form-control::-moz-placeholder {
     color: currentColor;

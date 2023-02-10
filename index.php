@@ -150,8 +150,9 @@
               <i class="fad fa-chevron-double-right button-before"></i>Tüm Projeler </a>
             </div>
           </div>
-        -->
+        
         </div>
+        -->
       </section>
         <section class="information-section">
           <div class="container">
@@ -186,14 +187,23 @@
                         </div>
                         <div class="row">
                             <div class="col-11">
-                              <input type="email" class="form-control" name="name" autocomplete="off" placeholder="E-Posta Adresi" require>
+                              <input type="email" class="form-control" name="eposta" autocomplete="off" placeholder="E-Posta Adresi" require>
                             </div>
                             <div class="col-1"></div>
                         </div>
                         <div class="row">
                             <div class="col-11">
-                            <textarea type="text" class="form-control" name="message" autocomplete="off" placeholder="Mesaj" rows="3" require></textarea>                            </div>
+                            <textarea type="text" class="form-control" name="mesaj" autocomplete="off" placeholder="Mesaj" rows="3" require></textarea>                            </div>
                             <div class="col-1"></div>
+                        </div>
+                        <div class="row">
+                          <div class="col-11">
+                          <button type="submit" class="button button-large button-pink-white">
+                            Gönder 
+                        </button>
+                          </div>
+                          <div class="col-1">
+                          </div>
                         </div>
                       </form>
                     </ul>

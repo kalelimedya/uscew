@@ -67,10 +67,7 @@
                   Telif Hakkı © Uscew 2023. <span>Tüm Hakları Saklıdır.</span>
                 </div>
                 <div class="col-auto mt-3 mt-sm-0">
-                  <a href="https://kumsalajans.com/aydinlatma-metni" class="d-flex align-items-center">
-                    <i class="fad fa-chevron-double-right mr-1"></i>
-                    
-                  </a>
+                  
                 </div>
               </div>
             </div>
@@ -81,9 +78,7 @@
           <div class="fixed-buttons">
             <div class="row no-gutters">
               <div class="col-12 d-block d-md-none">
-                <a href="tel:+90 216 706 60 64" class="phone gads-click-conversion">
-                  <i class="fad fa-phone"></i>
-                </a>
+                
               </div>
               <div class="yukari col-12 d-none d-md-block">
                 <a href="javascript:void(0);" class="scroll-top-body up">
