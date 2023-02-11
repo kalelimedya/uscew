@@ -96,8 +96,8 @@
 	border: 1px solid #fff;
 }
 .carousel-indicators li.active {
-	background: #8fc93c;
-	border-color: #8fc93c;
+	background: black;
+	border-color: black;
 }
 </style>
 
