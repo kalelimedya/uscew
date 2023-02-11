@@ -5,14 +5,15 @@ ul {
     padding: 0px;
 }
 .footer-section {
-  background:#080606  ;
+  background:  snow;
   position: relative;
+  border-top:2px solid #ccc;
 }
 .footer-cta {
   border-bottom: 1px solid #373636;
 }
 .single-cta i {
-  color: #ff5e14;
+  color: black;
   font-size: 30px;
   float: left;
   margin-top: 8px;
@@ -22,7 +23,7 @@ ul {
   display: inline-block;
 }
 .cta-text h4 {
-  color: #fff;
+  color: black;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2px;
@@ -52,11 +53,11 @@ ul {
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-      color: #7e7e7e;
+  color: #7e7e7e;
   line-height: 28px;
 }
 .footer-social-icon span {
-  color: #fff;
+  color: black;
   display: block;
   font-size: 20px;
   font-weight: 700;
@@ -64,7 +65,7 @@ ul {
   margin-bottom: 20px;
 }
 .footer-social-icon a {
-  color: #fff;
+  color: white;
   font-size: 16px;
   margin-right: 15px;
 }
@@ -76,16 +77,16 @@ ul {
   border-radius: 50%;
 }
 .facebook-bg{
-  background: #3B5998;
+  background: black;
 }
 .twitter-bg{
-  background: #55ACEE;
+  background: black;
 }
 .google-bg{
-  background: #DD4B39;
+  background: black;
 }
 .footer-widget-heading h3 {
-  color: #fff;
+  color: black;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 40px;
@@ -107,10 +108,10 @@ ul {
   margin-bottom: 12px;
 }
 .footer-widget ul li a:hover{
-  color: white;
+  color: black;
 }
 .footer-widget ul li a {
-  color: #878787;
+  color: #7e7e7e;
   text-transform: capitalize;
 }
 .subscribe-form {
@@ -127,13 +128,13 @@ ul {
 .subscribe-form button {
     position: absolute;
     right: 0;
-    background: #ff5e14;
+    background: black;
     padding: 13px 20px;
     border: 1px solid #ff5e14;
     top: 0;
 }
 .subscribe-form button i {
-  color: #fff;
+  color: white;
   font-size: 22px;
   transform: rotate(-6deg);
 }
@@ -171,7 +172,7 @@ ul {
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="cta-text">
                                 <h4>Adres</h4>
-                                <span>EMRE MAH.3866 SOK. USTAM PARK EVLERİ 3 C BLOK KAT:5 DAİRE:14 ISPARTA / MERKEZ ŞTİ.</span>
+                                <span>EMRE MAH.3866 SOK. USTAM PARK EVLERİ 3 C <br> BLOK KAT:5 DAİRE:14 ISPARTA / MERKEZ ŞTİ.</span>
                             </div>
                         </div>
                     </div>
@@ -180,7 +181,7 @@ ul {
                             <i class="fas fa-phone"></i>
                             <div class="cta-text">
                                 <h4>Telefon</h4>
-                                <span>9876543210 0</span>
+                                <span>0000000000</span>
                             </div>
                         </div>
                     </div>
@@ -189,7 +190,7 @@ ul {
                             <i class="far fa-envelope-open"></i>
                             <div class="cta-text">
                                 <h4>E-Posta</h4>
-                                <span>mail@info.com</span>
+                                <span>info@uscew.com</span>
                             </div>
                         </div>
                     </div>
