@@ -107,7 +107,7 @@
     <div class="container">
       <div class="row header-row align-items-center">
         <div class="col-auto logo">
-          <a href="index.html">
+          <a href="index.php">
             <img src="assets/images/logo.png" alt="USCEW LOGO">
           </a>
         </div>
