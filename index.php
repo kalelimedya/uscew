@@ -2,7 +2,7 @@
 <style>
 .carousel{
 	margin: 30px 0;
-    background: #ccc;
+    background: white;
   	position: relative;
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
@@ -53,7 +53,7 @@
 	text-transform: uppercase;
 }
 .carousel-caption p {
-	background: #8fc93c;
+	background: black;
 	padding: 10px 20px;
 	font-size: 20px;
 	font-weight: 300;
@@ -146,7 +146,7 @@
         </div>
       </div>
     </section>
-<div class="container">
+<section>
 	<div class="row">
 		<div class="col-md-12">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -164,30 +164,27 @@
 							<h3>Dijital web tasarım ve reklam stüdyosu</h3>
 							<p>Pulvinar leo id risus pellentesque vestibulum. Sed diam libero, sodales eget cursus dolor.</p>
 							<div class="carousel-action">
-								<a href="#" class="btn btn-primary">Learn More</a>
-								<a href="#" class="btn btn-success">Try Now</a>
+								<a href="#" class="btn btn-primary">İletişim</a>
 							</div>
 						</div>
 					</div>	
 					<div class="item">
-						<img src="/examples/images/slides/tablet.jpg" alt="">
+						<img src="assets/images/slider2.webp" alt="">
 						<div class="carousel-caption">
 							<h3>Amazing Digital Experience</h3>							
 							<p>Nullam hendrerit justo non leo aliquet imperdiet. Etiam sagittis lectus condime dapibus.</p>
 							<div class="carousel-action">
-								<a href="#" class="btn btn-primary">Learn More</a>
-								<a href="#" class="btn btn-success">Try Now</a>
+              <a href="#" class="btn btn-primary">İletişim</a>
 							</div>
 						</div>
 					</div>
 					<div class="item">
-						<img src="/examples/images/slides/workstation.jpg" alt="">
+						<img src="assets/images/slider3.jpg" alt="">
 						<div class="carousel-caption">
 							<h3>Live Monitoring Tools</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu pellentesque sem tempor.</p>
 							<div class="carousel-action">
-								<a href="#" class="btn btn-primary">Learn More</a>
-								<a href="#" class="btn btn-success">Try Now</a>
+              <a href="#" class="btn btn-primary">İletişim</a>
 							</div>
 						</div>
 					</div>	
@@ -202,7 +199,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
     <section class="references-home-section" style="margin-bottom:-120px;">
       <div class="container">
