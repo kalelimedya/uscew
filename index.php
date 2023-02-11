@@ -63,20 +63,23 @@
 }
 .carousel-action .btn {
 	min-height: 34px;
-	border-radius: 0;
+	border-radius: 3px;
 	margin: 3px;
 	min-width: 150px;
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
 }
 .carousel-action .btn-primary {
-	border-color: #000;
+	border-color: black;
 	background: none;
 	color: #000;
+  transition-property: all;
+  transition-duration: 1000ms;
 }
 .carousel-action .btn-primary:hover {
-	background: #000;
-	color: #fff;
+	background: black;
+	color: white;
+  border-color:black;
 }
 .carousel-action .btn-success {
 	background: #8fc93c;
@@ -294,31 +297,31 @@
                       <form action="islemler/ajax.php" method="POST">
                         <div class="row">
                             <div class="col-11">
-                              <input type="text" class="form-control" name="isim" autocomplete="off" placeholder="Adınız ve Soyadınız" require>
+                              <input type="text" class="form-control form-control-2" name="isim" autocomplete="off" placeholder="Adınız ve Soyadınız" require>
                             </div>
                             <div class="col-1"></div>
                         </div>
                         <div class="row">
                             <div class="col-11">
-                              <input type="text" class="form-control" name="firmaisim" autocomplete="off" placeholder="Firma İsmi" require>
+                              <input type="text" class="form-control form-control-2" name="firmaisim" autocomplete="off" placeholder="Firma İsmi" require>
                             </div>
                             <div class="col-1"></div>
                         </div>
                         <div class="row">
                             <div class="col-11">
-                              <input type="text" class="form-control" name="tel" autocomplete="off" placeholder="Telefon Numarası" require>
+                              <input type="text" class="form-control form-control-2" name="tel" autocomplete="off" placeholder="Telefon Numarası" require>
                             </div>
                             <div class="col-1"></div>
                         </div>
                         <div class="row">
                             <div class="col-11">
-                              <input type="email" class="form-control" name="eposta" autocomplete="off" placeholder="E-Posta Adresi" require>
+                              <input type="email" class="form-control form-control-2" name="eposta" autocomplete="off" placeholder="E-Posta Adresi" require>
                             </div>
                             <div class="col-1"></div>
                         </div>
                         <div class="row">
                             <div class="col-11">
-                            <textarea type="text" class="form-control" name="mesaj" autocomplete="off" placeholder="Mesaj" rows="3" require></textarea>                            </div>
+                            <textarea type="text" class="form-control form-control-2" name="mesaj" autocomplete="off" placeholder="Mesaj" rows="3" require></textarea></div>
                             <div class="col-1"></div>
                         </div>
                         <div class="row">
