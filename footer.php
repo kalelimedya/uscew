@@ -99,7 +99,7 @@ ul {
   bottom: -15px;
   height: 2px;
   width: 50px;
-  background: #ff5e14;
+  background: black;
 }
 .footer-widget ul li {
   display: inline-block;
@@ -130,7 +130,7 @@ ul {
     right: 0;
     background: black;
     padding: 13px 20px;
-    border: 1px solid #ff5e14;
+    border: 1px solid black;
     top: 0;
 }
 .subscribe-form button i {
@@ -139,13 +139,13 @@ ul {
   transform: rotate(-6deg);
 }
 .copyright-area{
-  background: #202020;
+  background:  #d9d9d9;
   padding: 25px 0;
 }
 .copyright-text p {
   margin: 0;
   font-size: 14px;
-  color: #878787;
+  color: black;
 }
 .copyright-text p a{
   color: #ff5e14;
@@ -155,7 +155,7 @@ ul {
   margin-left: 20px;
 }
 .footer-menu li:hover a{
-  color: #ff5e14;
+  color: black;
 }
 .footer-menu li a {
   font-size: 14px;
@@ -257,7 +257,7 @@ ul {
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                         <div class="copyright-text">
-                            <p>Copyright &copy; 2023, All Right Reserved </p>
+                            <b><p>Copyright &copy; 2023, All Right Reserved </p></b>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
