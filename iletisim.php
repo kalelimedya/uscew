@@ -46,15 +46,8 @@
                       </form>
         </div>
         <div class="col-6">
-               <h3>ADRES</h3>
-               <h5>USCEW
-                    EMRE MAH.
-                    3866 SOK.
-                    USTAM PARK EVLERİ 3 C BLOK KAT:5 DAİRE:14
-                    ISPARTA / MERKEZ ŞTİ.
-                    TÜRKİYE
-
-                    </h5>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.6217254981098!2d30.55283175694767!3d37.7520177214564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c5b5a04f6249b7%3A0x76a624149201647b!2sUstam%20Park%20Evleri!5e0!3m2!1str!2str!4v1676120686996!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               
         </div>
     </div>
 </div>
