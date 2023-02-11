@@ -139,6 +139,12 @@ grecaptcha.enterprise.ready(function() {
                 İşlerimiz
               </a>
             </li>
+            <li class="d-lg-none d-xxl-block">
+            <a href="hizmetlerimiz.php">
+                Hizmetlerimiz
+              </a>
+            </li>
+            <!--
             <li class=" ">
               <a href="">
                 Hizmetlerimiz
@@ -176,6 +182,7 @@ grecaptcha.enterprise.ready(function() {
                 </li>
               </ul>
             </li>
+            -->
             <li class=" ">
               <a href="blog.php">
                 Blog
