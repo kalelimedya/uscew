@@ -94,6 +94,7 @@
     outline: 0;
     box-shadow: inset 0 -1px 0 0 darkred;
 }
+
 .home-slider-section>.container:after {
     position: absolute;
     left: 0;
@@ -164,15 +165,17 @@
     bottom: -32px;
     content: url("");
 }
+
 .owl-fa-nav>a {
-    color:white;
+    color: white;
     background-color: black;
-    border:2px solid white;
+    border: 2px solid white;
 }
+
 .owl-fa-nav>a:hover {
-    color:black;
+    color: black;
     background-color: white;
-    border:2px solid black;
+    border: 2px solid black;
 }
 
 footer .fixed-whatsapp {
