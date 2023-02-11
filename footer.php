@@ -64,6 +64,7 @@ ul {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 20px;
 }
+
 .footer-social-icon a {
   color: white;
   font-size: 16px;
@@ -75,6 +76,17 @@ ul {
   text-align: center;
   line-height: 38px;
   border-radius: 50%;
+  transition: 1000ms all;
+}
+.footer-social-icon i:hover {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  background:#f2f2f2;
+  color:black;
+  transition: 1000ms all;
 }
 .facebook-bg{
   background: black;
@@ -139,7 +151,7 @@ ul {
   transform: rotate(-6deg);
 }
 .copyright-area{
-  background:  #d9d9d9;
+  background:   #f2f2f2;
   padding: 25px 0;
 }
 .copyright-text p {
