@@ -280,6 +280,21 @@
         
         </div>
         -->
+		
+		
+		<?php
+    
+// Checking valid form is submit or not
+if (isset($_POST['submit_btn'])) {
+    
+    // Storing name in $name variable
+    $name = $_POST['name'];
+    
+    // Storing google recaptcha response
+    // in $recaptcha variable
+    $recaptcha = $_POST['g-recaptcha-response'];
+}
+?>
       </section>
         <section class="information-section">
           <div class="container">
@@ -294,7 +309,7 @@
                       <div class="menu-open"></div>
                     </a>
                     <ul class="fr-view collapse-description">
-                      <form action="islemler/ajax.php" method="POST">
+                      <form action="action.php" method="POST">
                         <div class="row">
                             <div class="col-11">
                               <input type="text" class="form-control form-control-2" name="isim" autocomplete="off" placeholder="Adınız ve Soyadınız" require>
@@ -324,9 +339,16 @@
                             <textarea type="text" class="form-control form-control-2" name="mesaj" autocomplete="off" placeholder="Mesaj" rows="3" require></textarea></div>
                             <div class="col-1"></div>
                         </div>
+						<div class="row">
+						
+						<div class="g-recaptcha" 
+                data-sitekey="6Lc4AXEkAAAAAPATpOV7Uo4hYo5AIgCUtWZPr7E4">
+            </div>
+						
+						</div>
                         <div class="row">
                           <div class="col-11">
-                          <button type="submit" class="button button-large button-pink-white">
+                          <button type="submit" name="submit_btn" class="button button-large button-pink-white">
                             Gönder 
                         </button>
                           </div>
