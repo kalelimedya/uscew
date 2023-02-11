@@ -12307,7 +12307,7 @@ body.header-sticky {
     display: block;
     width: 100%;
     height: calc(2.25rem + 2px);
-    padding: 33px 18px 33px 8px;
+    padding: -1px 18px 33px 8px;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;

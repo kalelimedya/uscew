@@ -334,6 +334,25 @@ if (isset($_POST['submit_btn'])) {
                             </div>
                             <div class="col-1"></div>
                         </div>
+						<div class="row">
+						
+						   <div class="col-11">
+						  
+						  
+                                            <select name="proje" class="form-control form-control-2" id="proje">
+                                                <option value="">Lütfen seçiniz</option>
+                                                <option value="Andorid">Web Site Yapımı</option>
+                                                <option value="İOS">SEO</option>
+												<option value="Andorid">Mobil Uygulama Yapımı</option>
+                                                <option value="İOS">Sosyal Medya Yönetimi</option>
+												<option value="İOS">Dijital Tasarım</option>
+												<option value="İOS">Diğer</option>
+                                            </select>
+                                           <div class="col-1"></div>
+										
+                                        </div>
+						</div>
+						
                         <div class="row">
                             <div class="col-11">
                             <textarea type="text" class="form-control form-control-2" name="mesaj" autocomplete="off" placeholder="Mesaj" rows="3" require></textarea></div>
