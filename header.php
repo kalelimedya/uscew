@@ -7,6 +7,7 @@
   <meta name="keywords" content="anahtar kelime">
   <link rel="stylesheet" href="assets/front/css/style.css">
   <link rel="stylesheet" href="assets/front/css/style2.css">
+  <script src="https://kit.fontawesome.com/77b52c446f.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" >
    
 </head>
