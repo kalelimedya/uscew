@@ -214,3 +214,6 @@ footer .fixed-whatsapp:hover {
         bottom: 140px
     }
 }
+.form-control {
+    border:1px solid black;
+}
