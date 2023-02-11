@@ -5,7 +5,7 @@ ul {
     padding: 0px;
 }
 .footer-section {
-  background:#080606;
+  background:#080606  ;
   position: relative;
 }
 .footer-cta {
@@ -107,7 +107,7 @@ ul {
   margin-bottom: 12px;
 }
 .footer-widget ul li a:hover{
-  color: #ff5e14;
+  color: white;
 }
 .footer-widget ul li a {
   color: #878787;
