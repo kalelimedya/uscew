@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
   <title> USCEW </title>
   <meta charset="utf-8">
@@ -8,36 +9,38 @@
   <link rel="stylesheet" href="assets/front/css/style.css">
   <link rel="stylesheet" href="assets/front/css/style2.css">
   <script src="https://kit.fontawesome.com/77b52c446f.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" >
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lc4AXEkAAAAAPATpOV7Uo4hYo5AIgCUtWZPr7E4"></script>
-<script>
-grecaptcha.enterprise.ready(function() {
-    grecaptcha.enterprise.execute('6Lc4AXEkAAAAAPATpOV7Uo4hYo5AIgCUtWZPr7E4', {action: 'login'}).then(function(token) {
+  <script>
+    grecaptcha.enterprise.ready(function () {
+      grecaptcha.enterprise.execute('6Lc4AXEkAAAAAPATpOV7Uo4hYo5AIgCUtWZPr7E4', { action: 'login' }).then(function (token) {
        ...
     });
 });
-</script>
-   
-   
-   <style>
-   .grecaptcha-badge { display: none; }
-   
-   </style>
-   
-   
+  </script>
+
+
+  <style>
+    .grecaptcha-badge {
+      display: none;
+    }
+  </style>
+
+
 </head>
-  <body>
-    <div class="mobile-menu-shadow">
-    </div>
-    <section class="mobile-menu-section">
-      <div class="container site">
-        <div class="row no-gutters">
-          <div class="col-12">
-            <div class="row align-items-center mb-4">
-              <div class="col mobile-menu-title">
-               Menü
-             </div>
-             <div class="col-auto ml-auto">
+
+<body>
+  <div class="mobile-menu-shadow">
+  </div>
+  <section class="mobile-menu-section">
+    <div class="container site">
+      <div class="row no-gutters">
+        <div class="col-12">
+          <div class="row align-items-center mb-4">
+            <div class="col mobile-menu-title">
+              Menü
+            </div>
+            <div class="col-auto ml-auto">
               <a href="#" id="header-mobile-menu-switch-close">
                 <i class="fad fa-times"></i>
               </a>
@@ -111,7 +114,7 @@ grecaptcha.enterprise.ready(function() {
               <ul class="header-mobil-menu">
                 <li>
 
-               </li>
+                </li>
               </ul>
             </div>
           </div>
@@ -140,7 +143,7 @@ grecaptcha.enterprise.ready(function() {
               </a>
             </li>
             <li class="d-lg-none d-xxl-block">
-            <a href="hizmetlerimiz.php">
+              <a href="hizmetlerimiz.php">
                 Hizmetlerimiz
               </a>
             </li>
@@ -198,11 +201,11 @@ grecaptcha.enterprise.ready(function() {
         <div class="col-auto align-items-center d-none d-lg-flex">
           <ul class="header-menu header-language d-inline">
             <li class="language-li">
-           
+
             </li>
           </ul>
-         
-          </div>
+
         </div>
       </div>
-    </header>
+    </div>
+  </header>
