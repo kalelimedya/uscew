@@ -105,6 +105,108 @@
 </style>
 
 
+
+<style>
+
+.achievement-cards-div {
+    grid-gap: 1rem 1rem;
+    display: grid;
+    gap: 1rem 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.certificate-card {
+    background-color: #fff;
+    border: 1px solid hsla(0,0%,83%,.397);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px -15px rgb(0 0 0 / 20%);
+    padding: 1.5rem;
+    transition: all .3s ease;
+}
+
+.certificate-image-div {
+    align-items: center;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-image {
+    height: auto;
+    max-width: 100%;
+    width: 250px;
+}
+
+.certificate-image-div {
+    align-items: center;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.certificate-detail-div {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 25px;
+}
+.card-subtitle {
+    color: #666;
+    font-size: 1.063rem;
+    line-height: 1.5rem;
+}
+
+.certificate-card-footer {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.certificate-card-footer span.certificate-tag {
+    align-items: center;
+    background: #55198b;
+    border-radius: 4px;
+    color: #f5f2f4;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: .75rem;
+    height: 2em;
+    justify-content: center;
+    line-height: 1.5;
+    margin: 0 0.5rem 0.5rem 0;
+    padding: 0 0.75em;
+    transition: .2s ease-in;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.certificate-card-footer {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.certificate-card {
+    background-color: #fff;
+    border: 1px solid hsla(0,0%,83%,.397);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px -15px rgb(0 0 0 / 20%);
+    padding: 1.5rem;
+    transition: all .3s ease;
+}
+
+
+
+
+</style>
+
 <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald:300,400" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -210,66 +312,39 @@
           <p class="col col-mr-auto title scaled-p">Projelerimiz</p>
         </div>
         <!-- item -->
-        <div class="row">
+      
           <!-- item -->
-          <div class="col-6 col-lg-6 col-xxl-6 reference-list-col">
-            <div class="reference-list-container" style="background-color: #0e2a4f">
-              <p class="title">
-                <a href="">
-                    GoMekan
-                </a>
-              </p>
-              <div class="row">
-                <div class="col-6 col-lg-6 col-xxl-6">
-                    <div class="description">
-                    GoMekan web sitesi ve mobil uygulaması geliştirildi, kullanıma açıldı.
-                  </div>
-                </div>
-                <div class="col-6 col-lg-6 col-xxl-6">
-                <div class="image">
-                <a href="gomekan.com">
-                  <picture class="img-fluid">
-                    <!--
-                    <img src="assets/img/projeler/gomekan_kirmizi_siyah.png" alt="proje logosu" style="width:250px">
-                    -->
-                  </picture>
-                </a>
-              </div>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-          <div class="col-6 col-lg-6 col-xxl-6 reference-list-col">
-            <div class="reference-list-container" style="background-color: #0e2a4f">
-              <p class="title">
-                <a href="">
-                    GoMekan
-                </a>
-              </p>
-              <div class="row">
-                <div class="col-6 col-lg-6 col-xxl-6">
-                    <div class="description">
-                    GoMekan web sitesi ve mobil uygulaması geliştirildi, kullanıma açıldı.
-                  </div>
-                </div>
-                <div class="col-6 col-lg-6 col-xxl-6">
-                <div class="image">
-                <a href="gomekan.com">
-                  <picture class="img-fluid">
-                    <!--
-                    <img src="assets/img/projeler/gomekan_kirmizi_siyah.png" alt="proje logosu" style="width:250px">
-                    -->
-                  </picture>
-                </a>
-              </div>
-                </div>
-              </div>
-              
-            </div>
-          </div>
+        
+		<div class="achievement-cards-div">
+		<div class="certificate-card">
+		<div class="certificate-image-div">
+		<img src="assets/images/gomekan.png" alt="Google Code-In Logo" class="card-image"></div>
+		<div class="certificate-detail-div"><h5 class="card-title">GoMekan</h5>
+		<p class="card-subtitle">GoMekan web sitesi ve mobil uygulaması geliştirildi, kullanıma açıldı</p>
+		</div><div class="certificate-card-footer">
+		<span class="certificate-tag">Web Sitesi</span>
+		<span class="certificate-tag">Mobil Uygulama</span>
+		<span class="certificate-tag">Geliştirme</span></div>
+		</div><div class="certificate-card">
+		<div class="certificate-image-div">
+		<img src="assets/images/medyaloji.png" alt="Google Assistant Action Logo" class="card-image"></div>
+		<div class="certificate-detail-div"><h5 class="card-title">Medyaloji</h5>
+		<p class="card-subtitle">Türkiye’nin en büyük İnfluencer Pazarlama şirketi Mediaoloji’nin web sitesi teslim edildi, SEO çalışmaları devam etmekte.</p></div>
+		<div class="certificate-card-footer">
+		<span class="certificate-tag">Web Sitesi</span></div></div>
+		<div class="certificate-card"><div class="certificate-image-div">
+		<img src="assets/images/jobsangel.png" alt="PWA Logo" class="card-image"></div>
+		<div class="certificate-detail-div">
+		<h5 class="card-title">Jobsangel</h5>
+		<p class="card-subtitle">Jobsangel web sitesi A’dan Z’ye tasarlandı, hayata geçirildi.</p></div><div class="certificate-card-footer"><span class="certificate-tag">Certification</span>
+		<span class="certificate-tag">Web Sitesi</span>
+		</div>
+		</div></div>
+		
+		
+		
            
-        </div>
+       
       <!--
         <div class="row">
           <div class="col-auto mr-auto ml-auto work-stages-button">
