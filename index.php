@@ -109,6 +109,18 @@
 	border-color: black;
 	text-decoration:none
 }
+
+.header-menu>li>a  {
+	text-decoration: none;
+}
+
+.left-menu>li>a>span{
+	text-decoration: none;
+}
+
+.left-menu>li>a {
+	text-decoration: none;
+}
 </style>
 
 
