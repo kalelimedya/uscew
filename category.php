@@ -1,13 +1,11 @@
-<?php 
-
-include 'header.php';
+<?php include 'header.php'; 
 
 $category = (isset($_POST['category']) ? $_POST['category'] : '');
 $query = mysqli_query($con, "SELECT * FROM post WHERE category='$category' ");
 $row1 = mysqli_fetch_assoc($query)
 
 
- ?>
+?>
 
 
 <style>
@@ -131,72 +129,41 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 <div class="container">
 		<div class="row">
 			<div class="col-8">
-<?php
 
-$query = mysqli_query($con, "SELECT * FROM post ORDER BY id DESC LIMIT 6");
-while ($row = mysqli_fetch_assoc($query)) {
-	?>
-					
-							<div class="archive-main archive-list  archive-heading-small archive-borders-enabled archive-shadow-enabled archive-scale-disabled">
-								<article class="entry-preview post-34394 post type-post status-publish format-standard has-post-thumbnail category-wordpress">
-									<div class="post-outer">
-										<div class="post-inner">
-											<div class="entry-thumbnail">
-												<div class="cs-overlay cs-overlay-hover cs-overlay-ratio cs-ratio-landscape" data-scheme="inverse">
-													<div class="cs-overlay-background">
-														<div class="blogresim">
-															<img data-lazyloaded="1"  width="330" height="220"  class="attachment-csco-thumbnail size-csco-thumbnail wp-post-image entered litespeed-loaded" alt="" decoding="async" data-srcset="image/<?php echo $row['image']; ?> 1900w, image/<?php echo $row['image']; ?> 300w, image/<?php echo $row['image']; ?> 1024w, image/<?php echo $row['image']; ?> 768w, image/<?php echo $row['image']; ?> 1536w, image/<?php echo $row['image']; ?> 360w, image/<?php echo $row['image']; ?> 545w, image/<?php echo $row['image']; ?> 1600w" data-sizes="(max-width: 330px) 100vw, 330px" data-ll-status="loaded" sizes="(max-width: 330px) 100vw, 330px" srcset="image/<?php echo $row['image']; ?> 1900w, image/<?php echo $row['image']; ?> 300w, image/<?php echo $row['image']; ?> 1024w, image/<?php echo $row['image']; ?> 768w, image/<?php echo $row['image']; ?> 1536w, blogg/image/<?php echo $row['image']; ?> 360w, image/<?php echo $row['image']; ?> 545w, blogg/image/<?php echo $row['image']; ?> 1600w">
-															<noscript>
-															<img width="330" height="220" src="image/<?php echo $row['image']; ?>" class="attachment-csco-thumbnail size-csco-thumbnail wp-post-image" alt="" decoding="async" srcset="image/<?php echo $row['image']; ?> 1900w, image/<?php echo $row['image']; ?> 300w, image/<?php echo $row['image']; ?> 1024w, image/<?php echo $row['image']; ?> 768w, image/<?php echo $row['image']; ?> 1536w, image/<?php echo $row['image']; ?> 360w, image/<?php echo $row['image']; ?> 545w, image/<?php echo $row['image']; ?> 1600w" sizes="(max-width: 330px) 100vw, 330px" />
-															</noscript>
-														</div>
-													</div>
-															<div class="cs-overlay-content">
-																<span class="read-more">Devamını Oku</span>
-																<ul class="post-meta">
-																	<li class="meta-reading-time">
-																		<i class="cs-icon cs-icon-clock"></i>4 dakika okuma süresi
-																	</li>
-																</ul>
-															</div>
-														<a href="post.php?id=<?php echo $row['id']; ?>">
-												</div>
-											</div>
-										</div>
-								<div class="post-inner">
-									<div class="meta-category">
-										<a class="category-style" href="post.php?id=<?php echo $row['id']; ?>">
-											<time datetime="2022-02-23"><?php echo $row["date"]; ?></time>
-										<span class="label"><?php echo $row["category"]; ?></span>
-										</a>
-									</div>
-									<header class="entry-header">
-										<h2 class="entry-title">
-											<a href="post.php?id=<?php echo $row['id']; ?>">
-												<?php echo $row['title']; ?>
-											</a>
-										</h2>
-										<ul class="post-meta">
-										</ul>
-									</header>
-									<div class="entry-details">
-										<div class="entry-excerpt">
-											<?php echo substr($row['text'], 0, 100) . "..."; ?>
-										</div>
-									</div>
-								</div>
-							</div>
-								</article>
-								<article class="entry-preview post-34383 post type-post status-publish format-standard has-post-thumbnail category-e-ticaret">
-									<div class="post-outer">
-										<div class="post-inner">
-											<div class="entry-thumbnail">
-												<div class="cs-overlay cs-overlay-hover cs-overlay-ratio cs-ratio-landscape" data-scheme="inverse">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+						<h2 class="h2admin">Category Results: <small style="background: black;color: white;padding: 4px;"><?php echo $row1["category"]; ?></small></h2>
+				<?php 
+				$query = mysqli_query($con, "SELECT * FROM post WHERE category='$category' ORDER BY id DESC");
+				while ($row = mysqli_fetch_assoc($query)) {
+					?>
+
+					<div style="clear: both;margin-bottom: 50px;">
+				
+				<div style="width: 40%;float: left;">
+					<div style="background-image: url('blogg/image/<?php echo $row['image']; ?>');
+				    background-position: center top !important;
+				    background-size: cover;
+				    background-repeat: no-repeat;
+				    height: 150px;
+				    width: 83%;
+				    margin-left: 11px;
+				    border: 5px solid blueviolet;"></div>
+				</div>
+				<div style="width:60%;float: right;">
+				<h3 style="color: black;margin: 0px;">
+					<?php echo $row['title']; ?>
+
+				</h3>
+				<small style="margin: 0px;background: black none repeat scroll 0% 0%;color: white;padding: 3px;font-size: 10px;">Category: <?php echo $row["category"]; ?></small>
+				<small style="margin: 0px;background: black none repeat scroll 0% 0%;color: white;padding: 3px;font-size: 10px;">Date: <?php echo $row["date"]; ?></small>
+				<p style="color: black;" >
+					<?php echo substr($row['text'],0,200)."..."; ?>
+				</p>	
+				</div>
+				
+				<p style="font-family: calibri; "><a style="background: blueviolet;padding: 5px;color: white;text-decoration: none;" href="../article/<?php echo $row['id']; ?>/<?php echo strtolower(str_replace(' ', '-', trim($row['title'])))."/"; ?>">Read More</a> 
+				
+				</div><br><hr><br>
+						
 						<?php
 }
 ?>
@@ -246,10 +213,6 @@ while ($row = mysqli_fetch_assoc($query)) {
 
 </style>
 		</div>
-				<?php
-		$query = mysqli_query($con, "SELECT * FROM post ORDER BY id ASC LIMIT 4");
-		while ($row = mysqli_fetch_assoc($query)) {
-			?>
 				<div class="col-md-4">
 					<div>
 						<h4 class="kategori">Kategoriler</h4>
@@ -287,8 +250,6 @@ while ($row = mysqli_fetch_assoc($query)) {
 				</div>
 			
 		</div>
-					<?php 
-		} ?>
 	</div>
 </section>
 			
