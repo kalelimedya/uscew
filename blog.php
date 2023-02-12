@@ -217,13 +217,14 @@ while ($row = mysqli_fetch_assoc($query)) {
 }
 ?>
 		</div>
+		<div class="col-md-4">
+					<div class="menu-2">
+						<h4 class="kategori">Kategoriler</h4>
 				<?php
 		$query = mysqli_query($con, "SELECT * FROM post ORDER BY id ASC LIMIT 4");
 		while ($row = mysqli_fetch_assoc($query)) {
 			?>
-				<div class="col-md-4">
-					<div class="menu-2">
-						<h4 class="kategori">Kategoriler</h4>
+				
 							<div class="kategori-3">
 								<a>Kategori 1</a> 
 							</div>
@@ -236,12 +237,13 @@ while ($row = mysqli_fetch_assoc($query)) {
 							<div class="kategori-3">
 								<a>Kategori 1</a> 
 							</div>
-					</div>
+					
+					<?php 
+		} ?>
+		</div>
 				</div>
 			
 		</div>
-					<?php 
-		} ?>
 	</div>
 </section>
 			
