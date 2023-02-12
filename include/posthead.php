@@ -2,15 +2,10 @@
 
 include 'db.php';
 /*
-This script is wrtten by 
-	Author = Adeleye Ayodeji 
-	FacebookPage = https://www.facebook.com/biggidroid
-	Developer = Adeleye Ayodeji
-	Developer URL = https://www.adeleyeayodeji.com
-	WhatsApp = +2347034803384
+This script is wrtten by Eren Ekmekci
 */	
 
-// Program to display current page URL. 
+
   
 $link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
                 "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  

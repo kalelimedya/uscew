@@ -1,6 +1,6 @@
 <?php include("include/posthead.php"); ?>
 	  <?php
-					$id = $_GET["id"];
+					$id = (isset($_GET['id']) ? $_GET['id'] : '');
 					$query = mysqli_query($con, "SELECT * FROM post WHERE id='$id' ");
 					$row = mysqli_fetch_assoc($query);
 				?>
@@ -26,13 +26,15 @@
 </style>
 
 	  <?php
-					$id = $_GET["id"];
+					 $id = (isset($_GET['id']) ? $_GET['id'] : '');
 					$query = mysqli_query($con, "SELECT * FROM post WHERE id='$id' ");
 					$row = mysqli_fetch_assoc($query);
 				?>
 					
 <section class="references-home-section" style="margin-bottom:-120px;">
 <div class="container">
+<img  src="blogg/image/<?php echo $row['image']; ?>" alt="Design conferences in 2022" loading="lazy">
+ <h2><?php echo $row['title']; ?></h2>
 		<div class="row">
 			<div class="col-8">
 

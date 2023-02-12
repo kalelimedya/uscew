@@ -164,7 +164,7 @@ while ($row = mysqli_fetch_assoc($query)) {
 								</div>
 								<header class="entry-header">
 									<h2 class="entry-title">
-										<a href="https://www.natro.com/blog/smtp-nedir-wordpress-smtp-mail-ayari-nasil-yapilir/" rel="bookmark">
+										<a href="post.php?id=<?php echo $row['id']; ?>">
 											<?php echo $row['title']; ?>
 										</a>
 									</h2>
