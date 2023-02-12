@@ -156,8 +156,8 @@ while ($row = mysqli_fetch_assoc($query)) {
 										</div>
 								<div class="post-inner">
 									<div class="meta-category">
-										<a class="category-style" href="https://www.natro.com/blog/wordpress/">
-											<span style="background-color:#000000" data-color="#000000" data-color-dark="#555555" class="char" data-scheme="dark">W</span>
+										<a class="category-style" href="post.php?id=<?php echo $row['id']; ?>">
+											<time datetime="2022-02-23"><?php echo $row["date"]; ?></time>
 										<span class="label"><?php echo $row["category"]; ?></span>
 										</a>
 									</div>
