@@ -56,13 +56,13 @@ if (isset($_POST['submit'])) {
 
 	 <div class="more">
 				<div class="postside">
-					<h3 style="margin-top: 10px;padding-top: 0px;font-family: calibri;background:blueviolet;text-align: left;padding: 5px;color: white;">Add a new post</h3>
+					<h3 style="margin-top: 10px;padding-top: 0px;font-family: calibri;background:blueviolet;text-align: left;padding: 5px;color: white;">Yeni Blog Gönderisi</h3>
 				
 				<form method="post" action="" enctype="multipart/form-data" style="width: 100%;float: left;margin-top: 0px;margin-bottom: 10px;clear: both;">
 					<p><?php if (isset($_POST["submit"])) {
 						echo $posted;
 					} ?></p>
-					<p>Post Title:</p>
+					<p>Gönderi başlığı:</p>
 				    <input type="text" name="title" placeholder="Enter your title">
 						<input type="hidden" value="999999999999999">
 					<label>

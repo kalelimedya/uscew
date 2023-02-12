@@ -13,9 +13,8 @@ if (isset($_SESSION["admin"])) {
 		$id = $_GET['id'];
 		$title = $_POST['title'];
 		$text = $_POST['text'];
-		$slider = $_POST['slider'];
 
-		$query = mysqli_query($con, "UPDATE sitedetails SET sitetitle='$title', slider1='$slider', sitetagline='$text' WHERE id='$id' ") or die();
+		$query = mysqli_query($con, "UPDATE sitedetails SET sitetitle='$title', sitetagline='$text' WHERE id='$id' ") or die();
 		if ($query) {
 		$posted = "<p style='color:white;background:green;padding:5px;border-radius:5px;text-align:center;'>Posted Successfully <br><span>Refresh the page to see result!</span></p>";
 	}else{
@@ -96,8 +95,6 @@ if (isset($_SESSION["admin"])) {
 				    <input type="text" name="title" placeholder="Enter your title" value="<?php echo $row["sitetitle"] ?>">
       		          <p>Site Tagline:</p>
       		          <textarea name="text"><?php echo $row["sitetagline"] ?></textarea>
-					  <p>Slider1:</p>
-      		          <textarea name="slider"><?php echo $row["slider1"] ?></textarea>
 			<input type="submit" name="update" value="Update">
 			<center style="margin-top: 5px;">
 				<a style="font-family: calibri; background: blueviolet;padding: 5px;color: white;text-decoration: none;" href="javascript:history.go(-1)">&larr; Go Back</a>
