@@ -155,6 +155,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 <div class="container">
 		<div class="row">
 			<div class="col-9">
+			<h1 style="width:160px;border-bottom:2px solid black;height:55px;margin-bottom:40px;">BLOG</h1>
 <?php
 
 $query = mysqli_query($con, "SELECT * FROM post ORDER BY id DESC LIMIT 6");
@@ -230,17 +231,17 @@ while ($row = mysqli_fetch_assoc($query)) {
 		
 					<div class="menu-2">
 						<h4 class="kategori">Kategoriler</h4>
-				<?php
-		$query = mysqli_query($con, "SELECT * FROM post ORDER BY id ASC LIMIT 4");
-		while ($row = mysqli_fetch_assoc($query)) {
-			?>
-				
-			<a href="#" class="button-xab col-6 col-md-3 button button-fluid button-blog-catgeory button-pink-white">
-			<span>Web ve Mobil Yazılım</span>
-			</a>
-					
-					<?php 
-		} ?>
+								<?php
+						$query = mysqli_query($con, "SELECT * FROM post ORDER BY id ASC LIMIT 4");
+						while ($row = mysqli_fetch_assoc($query)) {
+							?>
+								
+							<a href="#" class="button-xab col-6 col-md-3 button button-fluid button-blog-catgeory button-pink-white">
+							<span>Web ve Mobil Yazılım</span>
+							</a>
+									
+									<?php 
+						} ?>
 					</div>
 				</div>
 			
