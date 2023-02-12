@@ -145,7 +145,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 	border-left:2px solid black;
 	transition: 1000ms all;
 }
-
 </style>
 
 
@@ -170,7 +169,7 @@ while ($row = mysqli_fetch_assoc($query)) {
 												<div class="cs-overlay cs-overlay-hover cs-overlay-ratio cs-ratio-landscape" data-scheme="inverse" style="height:600px;width:600px;">
 													<div class="cs-overlay-background">
 														<div class="blogresim">
-															<img data-lazyloaded="1"  width="330" height="220"  class="attachment-csco-thumbnail size-csco-thumbnail wp-post-image entered litespeed-loaded" alt="" decoding="async" data-srcset="image/<?php echo $row['image']; ?> 1900w, image/<?php echo $row['image']; ?> 300w, image/<?php echo $row['image']; ?> 1024w, image/<?php echo $row['image']; ?> 768w, image/<?php echo $row['image']; ?> 1536w, image/<?php echo $row['image']; ?> 360w, image/<?php echo $row['image']; ?> 545w, image/<?php echo $row['image']; ?> 1600w" data-sizes="(max-width: 330px) 100vw, 330px" data-ll-status="loaded" sizes="(max-width: 330px) 100vw, 330px" srcset="image/<?php echo $row['image']; ?> 1900w, image/<?php echo $row['image']; ?> 300w, image/<?php echo $row['image']; ?> 1024w, image/<?php echo $row['image']; ?> 768w, image/<?php echo $row['image']; ?> 1536w, blogg/image/<?php echo $row['image']; ?> 360w, image/<?php echo $row['image']; ?> 545w, blogg/image/<?php echo $row['image']; ?> 1600w">
+															<img data-lazyloaded="1"  width="330" height="220"  class="attachment-csco-thumbnail size-csco-thumbnail wp-post-image entered litespeed-loaded blogresim" alt="" decoding="async" data-srcset="image/<?php echo $row['image']; ?> 1900w, image/<?php echo $row['image']; ?> 300w, image/<?php echo $row['image']; ?> 1024w, image/<?php echo $row['image']; ?> 768w, image/<?php echo $row['image']; ?> 1536w, image/<?php echo $row['image']; ?> 360w, image/<?php echo $row['image']; ?> 545w, image/<?php echo $row['image']; ?> 1600w" data-sizes="(max-width: 330px) 100vw, 330px" data-ll-status="loaded" sizes="(max-width: 330px) 100vw, 330px" srcset="image/<?php echo $row['image']; ?> 1900w, image/<?php echo $row['image']; ?> 300w, image/<?php echo $row['image']; ?> 1024w, image/<?php echo $row['image']; ?> 768w, image/<?php echo $row['image']; ?> 1536w, blogg/image/<?php echo $row['image']; ?> 360w, image/<?php echo $row['image']; ?> 545w, blogg/image/<?php echo $row['image']; ?> 1600w">
 															<noscript>
 															<img width="330" height="220" src="image/<?php echo $row['image']; ?>" class="attachment-csco-thumbnail size-csco-thumbnail wp-post-image" alt="" decoding="async" srcset="image/<?php echo $row['image']; ?> 1900w, image/<?php echo $row['image']; ?> 300w, image/<?php echo $row['image']; ?> 1024w, image/<?php echo $row['image']; ?> 768w, image/<?php echo $row['image']; ?> 1536w, image/<?php echo $row['image']; ?> 360w, image/<?php echo $row['image']; ?> 545w, image/<?php echo $row['image']; ?> 1600w" sizes="(max-width: 330px) 100vw, 330px" />
 															</noscript>
