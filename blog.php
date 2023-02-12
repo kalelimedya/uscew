@@ -228,15 +228,6 @@ while ($row = mysqli_fetch_assoc($query)) {
 							<div class="kategori-3">
 								<a>Kategori 1</a> 
 							</div>
-							<div class="kategori-3">
-								<a>Kategori 2</a> 
-							</div>
-							<div class="kategori-3">
-								<a>Kategori 1</a> 
-							</div>
-							<div class="kategori-3">
-								<a>Kategori 1</a> 
-							</div>
 					
 					<?php 
 		} ?>
