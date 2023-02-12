@@ -23,6 +23,12 @@
 	padding-left:30px;
 }
 
+.postresim {
+	    height: 250px;
+    width: 438px;
+}
+}
+
 </style>
 
 	  <?php
@@ -33,7 +39,7 @@
 					
 <section class="references-home-section" style="margin-bottom:-120px;">
 <div class="container">
-<img  src="blogg/image/<?php echo $row['image']; ?>" alt="Design conferences in 2022" loading="lazy">
+<img class="postresim"  src="blogg/image/<?php echo $row['image']; ?>" alt="Design conferences in 2022" loading="lazy">
  <h2><?php echo $row['title']; ?></h2>
 		<div class="row">
 			<div class="col-8">
