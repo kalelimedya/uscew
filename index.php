@@ -1,4 +1,4 @@
-
+<?php include 'header.php'; ?>
 <style>
 .carousel{
 	margin: 30px 0;
@@ -45,18 +45,22 @@
 	font-family: 'Oswald', sans-serif;
 	text-shadow: none;
 	margin-bottom: 20px;
+	text-decoration:none;
 }
 .carousel-caption h3 {
 	background: rgba(0,0,0,0.9);
 	padding: 12px 24px;
 	font-size: 40px;	
 	text-transform: uppercase;
+	text-decoration:none;
 }
 .carousel-caption p {
 	background: black;
 	padding: 10px 20px;
 	font-size: 20px;
 	font-weight: 300;
+	text-decoration:none
+	text-decoration:none;
 }
 .carousel-action {
 	padding: 10px 0 30px;
@@ -93,14 +97,17 @@
 	height: 11px;
 	border-radius: 50%;
 	margin: 1px 6px;
+	text-decoration:none
 }
 .carousel-indicators li {
 	background: transparent;
 	border: 1px solid #fff;
+	text-decoration:none
 }
 .carousel-indicators li.active {
 	background: black;
 	border-color: black;
+	text-decoration:none
 }
 </style>
 
@@ -113,6 +120,7 @@
     display: grid;
     gap: 1rem 1rem;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+	text-decoration:none;
 }
 
 .certificate-card {
@@ -122,6 +130,7 @@
     box-shadow: 0 10px 30px -15px rgb(0 0 0 / 20%);
     padding: 1.5rem;
     transition: all .3s ease;
+	text-decoration:none;
 }
 
 .certificate-image-div {
@@ -131,12 +140,14 @@
     justify-content: center;
     overflow: hidden;
     position: relative;
+	text-decoration:none;
 }
 
 .card-image {
     height: auto;
     max-width: 100%;
     width: 250px;
+	text-decoration:none;
 }
 
 .certificate-image-div {
@@ -146,10 +157,12 @@
     justify-content: center;
     overflow: hidden;
     position: relative;
+	text-decoration:none;
 }
 
 .certificate-detail-div {
     text-align: center;
+	text-decoration:none;
 }
 
 .card-title {
@@ -159,6 +172,7 @@
     color: #666;
     font-size: 1.063rem;
     line-height: 1.5rem;
+	text-decoration:none;
 }
 
 .certificate-card-footer {
@@ -166,6 +180,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+	text-decoration:none;
 }
 
 .certificate-card-footer span.certificate-tag {
@@ -184,6 +199,7 @@
     transition: .2s ease-in;
     vertical-align: middle;
     white-space: nowrap;
+	text-decoration:none;
 }
 
 .certificate-card-footer {
@@ -191,6 +207,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+	text-decoration:none;
 }
 
 .certificate-card {
@@ -200,6 +217,7 @@
     box-shadow: 0 10px 30px -15px rgb(0 0 0 / 20%);
     padding: 1.5rem;
     transition: all .3s ease;
+	text-decoration:none;
 }
 
 
@@ -213,7 +231,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<?php include 'header.php'; ?>
+
  <section class="home-about-section">
     <div class="container">
       <div class="row">
