@@ -72,6 +72,12 @@ This script is wrtten by
                     İşlerimiz
                   </a>
                 </li>
+                <li class="d-lg-none d-xxl-block">
+                  <a href="hizmetlerimiz.php">
+                    Hizmetlerimiz
+                  </a>
+                </li>
+                <!--
                 <li class=" ">
                   <a href="">
                     Hizmetlerimiz
@@ -110,6 +116,7 @@ This script is wrtten by
                     </li>
                   </ul>
                 </li>
+                -->
                 <li class=" ">
                   <a href="blog.php">
                     Blog

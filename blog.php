@@ -7,7 +7,7 @@
 	margin-bottom:40px;
 }
 .kategori {
-    border-bottom: 2px solid black;
+	border-bottom: 2px solid black;
 	width:150px;
 	height:35px;
 }
@@ -113,7 +113,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 
 
-
 </style>
 
 
@@ -129,98 +128,146 @@ $query = mysqli_query($con, "SELECT * FROM post ORDER BY id DESC LIMIT 6");
 while ($row = mysqli_fetch_assoc($query)) {
 	?>
 					
-						<div class="archive-main archive-list  archive-heading-small archive-borders-enabled archive-shadow-enabled archive-scale-disabled">
-							<article class="entry-preview post-34394 post type-post status-publish format-standard has-post-thumbnail category-wordpress">
-								<div class="post-outer">
-									<div class="post-inner">
-										<div class="entry-thumbnail">
-											<div class="cs-overlay cs-overlay-hover cs-overlay-ratio cs-ratio-landscape" data-scheme="inverse">
-												<div class="cs-overlay-background">
-													<div class="blogresim">
-														<img data-lazyloaded="1"  width="330" height="220"  class="attachment-csco-thumbnail size-csco-thumbnail wp-post-image entered litespeed-loaded" alt="" decoding="async" data-srcset="image/<?php echo $row['image']; ?> 1900w, image/<?php echo $row['image']; ?> 300w, image/<?php echo $row['image']; ?> 1024w, image/<?php echo $row['image']; ?> 768w, image/<?php echo $row['image']; ?> 1536w, image/<?php echo $row['image']; ?> 360w, image/<?php echo $row['image']; ?> 545w, image/<?php echo $row['image']; ?> 1600w" data-sizes="(max-width: 330px) 100vw, 330px" data-ll-status="loaded" sizes="(max-width: 330px) 100vw, 330px" srcset="image/<?php echo $row['image']; ?> 1900w, image/<?php echo $row['image']; ?> 300w, image/<?php echo $row['image']; ?> 1024w, image/<?php echo $row['image']; ?> 768w, image/<?php echo $row['image']; ?> 1536w, blogg/image/<?php echo $row['image']; ?> 360w, image/<?php echo $row['image']; ?> 545w, blogg/image/<?php echo $row['image']; ?> 1600w">
-														<noscript>
-														<img width="330" height="220" src="image/<?php echo $row['image']; ?>" class="attachment-csco-thumbnail size-csco-thumbnail wp-post-image" alt="" decoding="async" srcset="image/<?php echo $row['image']; ?> 1900w, image/<?php echo $row['image']; ?> 300w, image/<?php echo $row['image']; ?> 1024w, image/<?php echo $row['image']; ?> 768w, image/<?php echo $row['image']; ?> 1536w, image/<?php echo $row['image']; ?> 360w, image/<?php echo $row['image']; ?> 545w, image/<?php echo $row['image']; ?> 1600w" sizes="(max-width: 330px) 100vw, 330px" />
-														</noscript>
-													</div>
-												</div>
-														<div class="cs-overlay-content">
-															<span class="read-more">Devamını Oku</span>
-															<ul class="post-meta">
-																<li class="meta-reading-time">
-																	<i class="cs-icon cs-icon-clock"></i>4 dakika okuma süresi
-																</li>
-															</ul>
+							<div class="archive-main archive-list  archive-heading-small archive-borders-enabled archive-shadow-enabled archive-scale-disabled">
+								<article class="entry-preview post-34394 post type-post status-publish format-standard has-post-thumbnail category-wordpress">
+									<div class="post-outer">
+										<div class="post-inner">
+											<div class="entry-thumbnail">
+												<div class="cs-overlay cs-overlay-hover cs-overlay-ratio cs-ratio-landscape" data-scheme="inverse">
+													<div class="cs-overlay-background">
+														<div class="blogresim">
+															<img data-lazyloaded="1"  width="330" height="220"  class="attachment-csco-thumbnail size-csco-thumbnail wp-post-image entered litespeed-loaded" alt="" decoding="async" data-srcset="image/<?php echo $row['image']; ?> 1900w, image/<?php echo $row['image']; ?> 300w, image/<?php echo $row['image']; ?> 1024w, image/<?php echo $row['image']; ?> 768w, image/<?php echo $row['image']; ?> 1536w, image/<?php echo $row['image']; ?> 360w, image/<?php echo $row['image']; ?> 545w, image/<?php echo $row['image']; ?> 1600w" data-sizes="(max-width: 330px) 100vw, 330px" data-ll-status="loaded" sizes="(max-width: 330px) 100vw, 330px" srcset="image/<?php echo $row['image']; ?> 1900w, image/<?php echo $row['image']; ?> 300w, image/<?php echo $row['image']; ?> 1024w, image/<?php echo $row['image']; ?> 768w, image/<?php echo $row['image']; ?> 1536w, blogg/image/<?php echo $row['image']; ?> 360w, image/<?php echo $row['image']; ?> 545w, blogg/image/<?php echo $row['image']; ?> 1600w">
+															<noscript>
+															<img width="330" height="220" src="image/<?php echo $row['image']; ?>" class="attachment-csco-thumbnail size-csco-thumbnail wp-post-image" alt="" decoding="async" srcset="image/<?php echo $row['image']; ?> 1900w, image/<?php echo $row['image']; ?> 300w, image/<?php echo $row['image']; ?> 1024w, image/<?php echo $row['image']; ?> 768w, image/<?php echo $row['image']; ?> 1536w, image/<?php echo $row['image']; ?> 360w, image/<?php echo $row['image']; ?> 545w, image/<?php echo $row['image']; ?> 1600w" sizes="(max-width: 330px) 100vw, 330px" />
+															</noscript>
 														</div>
-													<a href="post.php?id=<?php echo $row['id']; ?>">
+													</div>
+															<div class="cs-overlay-content">
+																<span class="read-more">Devamını Oku</span>
+																<ul class="post-meta">
+																	<li class="meta-reading-time">
+																		<i class="cs-icon cs-icon-clock"></i>4 dakika okuma süresi
+																	</li>
+																</ul>
+															</div>
+														<a href="post.php?id=<?php echo $row['id']; ?>">
+												</div>
 											</div>
 										</div>
-									</div>
-							<div class="post-inner">
-								<div class="meta-category">
-									<a class="category-style" href="https://www.natro.com/blog/wordpress/">
-										<span style="background-color:#000000" data-color="#000000" data-color-dark="#555555" class="char" data-scheme="dark">W</span>
-									<span class="label"><?php echo $row["category"]; ?></span>
-									</a>
-								</div>
-								<header class="entry-header">
-									<h2 class="entry-title">
-										<a href="post.php?id=<?php echo $row['id']; ?>">
-											<?php echo $row['title']; ?>
+								<div class="post-inner">
+									<div class="meta-category">
+										<a class="category-style" href="https://www.natro.com/blog/wordpress/">
+											<span style="background-color:#000000" data-color="#000000" data-color-dark="#555555" class="char" data-scheme="dark">W</span>
+										<span class="label"><?php echo $row["category"]; ?></span>
 										</a>
-									</h2>
-									<ul class="post-meta">
-									</ul>
-								</header>
-								<div class="entry-details">
-									<div class="entry-excerpt">
-										<?php echo substr($row['text'], 0, 100) . "..."; ?>
 									</div>
-								</div>
-							</div>
-						</div>
-							</article>
-							<article class="entry-preview post-34383 post type-post status-publish format-standard has-post-thumbnail category-e-ticaret">
-								<div class="post-outer">
-									<div class="post-inner">
-										<div class="entry-thumbnail">
-											<div class="cs-overlay cs-overlay-hover cs-overlay-ratio cs-ratio-landscape" data-scheme="inverse">
-											</div>
+									<header class="entry-header">
+										<h2 class="entry-title">
+											<a href="post.php?id=<?php echo $row['id']; ?>">
+												<?php echo $row['title']; ?>
+											</a>
+										</h2>
+										<ul class="post-meta">
+										</ul>
+									</header>
+									<div class="entry-details">
+										<div class="entry-excerpt">
+											<?php echo substr($row['text'], 0, 100) . "..."; ?>
 										</div>
 									</div>
 								</div>
 							</div>
-					<?php
+								</article>
+								<article class="entry-preview post-34383 post type-post status-publish format-standard has-post-thumbnail category-e-ticaret">
+									<div class="post-outer">
+										<div class="post-inner">
+											<div class="entry-thumbnail">
+												<div class="cs-overlay cs-overlay-hover cs-overlay-ratio cs-ratio-landscape" data-scheme="inverse">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+						<?php
 }
 ?>
 <style>
-	ul,ol {
-		list-style-type:none;
-	}
+	
+.d-menu{
+    width: 250px;
+}
+.d-menu ul li{
+   list-style: none;
+}
+
+.d-menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+.d-menu ul li a{
+    text-decoration: none;
+    display: block;
+	border-bottom:1px solid black;
+	width:155px;
+	height:30px;
+	margin-top:5px;
+}
+
+.d-menu ul li ul {
+	display:none;
+}
+
+.d-menu ul li:hover ul {
+	display:block;
+	position:absolute;
+    margin:-40px 0 0 250px;
+}
+
+.d-menu ul li ul li a {
+	padding:10px;
+	font-size:15px;
+	transition:all .3s ease-in-out;
+	width:170px;
+}
+.d-menu ul li a:hover {
+	transition:all .3s ease-in-out;
+}
+
+
 </style>
 		</div>
 				<div class="col-md-4">
 					<div>
 						<h4 class="kategori">Kategoriler</h4>
-						<div class="kategori-2">
+						<div class="d-menu">
 							<ul>
-								<li><a class="kategori-3">Kategori 1</a></li>
-									<ol>
-										<li>Kategori</li>
-										<li>Kategori</li>
-										<li>Kategori</li>
-									</ol>
-								<li><a class="kategori-3">Kategori 2</a></li>
-									<ol>
-										<li>Kategori</li>
-										<li>Kategori</li>
-										<li>Kategori</li>
-									</ol>
-								<li><a class="kategori-3">Kategori 3</a></li>
-									<ol>
-										<li>Kategori</li>
-										<li>Kategori</li>
-										<li>Kategori</li>
-									</ol>
+								<li><a title="">WEB TASARIM</a>
+									<ul>
+										<li><a href="" title="">HTML</a></li>
+										<li><a href="" title="">CSS</a></li>
+										<li><a href="" title="">JAVASCRIPT</a></li>
+										<li><a href="" title="">PHP</a></li>
+										<li><a href="" title="">ASP.NET</a></li>
+									</ul>
+								</li>
+								<li><a title="">PROGRAMLAMA</a>
+									<ul>
+										<li><a href="" title="">C#</a></li>
+										<li><a href="" title="">C++</a></li>
+										<li><a href="" title="">VB.NET</a></li>
+										<li><a href="" title="">ANDROID</a></li>
+										<li><a href="" title="">ARDUINO</a></li>
+									</ul>
+								</li>
+								<li><a title="">GRAFİK</a>
+									<ul>
+										<li><a href="" title="">PAINT</a></li>
+										<li><a href="" title="">FIREWORKS</a></li>
+										<li><a href="" title="">PHOTOSHOP</a></li>
+										<li><a href="" title="">ILLUSTRATOR</a></li>
+									</ul>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -229,7 +276,7 @@ while ($row = mysqli_fetch_assoc($query)) {
 		</div>
 	</div>
 </section>
-
+			
 
 
 
