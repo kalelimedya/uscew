@@ -18,41 +18,215 @@ $link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ?
 	 
 ?>
 <!DOCTYPE html>
-<html>
+
+
+<html lang="tr">
+
 <head>
-	<title><?php $id = $_GET["id"];
-		$query = mysqli_query($con, "SELECT * FROM post WHERE id='$id' ");
-		$row2 = mysqli_fetch_assoc($query); echo $row2["title"]; ?></title>
-	<meta charset="utf-8">
-	<base href="/biggidroid/">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keyword" content="Biggidroid, Biggidroid simple php cms, php cms">
-	<meta name="description" content="<?php echo substr($row2['text'],0,180).'...'; ?>">
-	<!-- OG Meta data -->
+  <title> USCEW </title>
+  <meta charset="utf-8">
+  <meta name="description" content="Tanıtım">
+  <meta name="keywords" content="anahtar kelime">
+  <link rel="stylesheet" href="assets/front/css/style.css">
+  <link rel="stylesheet" href="assets/front/css/style2.css">
+  <script src="https://kit.fontawesome.com/77b52c446f.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lc4AXEkAAAAAPATpOV7Uo4hYo5AIgCUtWZPr7E4"></script>
+  <script>
+    grecaptcha.enterprise.ready(function () {
+      grecaptcha.enterprise.execute('6Lc4AXEkAAAAAPATpOV7Uo4hYo5AIgCUtWZPr7E4', { action: 'login' }).then(function (token) {
+       ...
+    });
+});
+  </script>
 
-	<meta property="og:url" content="<?php echo $link; ?>" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="<?php echo $row2["title"]; ?>" />
-	<meta property="og:description" content="<?php echo substr($row2['text'],0,180).'...'; ?>" />
-	<!-- Og Image generator -->
-	<?php
-	 $postimg = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
-                "https" : "http") . "://" . $_SERVER['HTTP_HOST'] ."/biggidroid/image/".$row2['image'];
-	 ?>
-	<meta property="og:image" content="<?php echo $postimg ?>" />
 
-	<!-- OG Meta data ends here -->
-	<?php
-		$query = mysqli_query($con, "SELECT * FROM sitedetails");
-		$row = mysqli_fetch_assoc($query);
-	?>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<link rel="icon" href="img/<?php echo $row["sitelogo"] ?>">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/index.js"></script>
-	<script src="js/search.js"></script>
+  <style>
+    .grecaptcha-badge {
+      display: none;
+    }
+  </style>
+
 
 </head>
+
 <body>
+  <div class="mobile-menu-shadow">
+  </div>
+  <section class="mobile-menu-section">
+    <div class="container site">
+      <div class="row no-gutters">
+        <div class="col-12">
+          <div class="row align-items-center mb-4">
+            <div class="col mobile-menu-title">
+              Menü
+            </div>
+            <div class="col-auto ml-auto">
+              <a href="#" id="header-mobile-menu-switch-close">
+                <i class="fad fa-times"></i>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <ul class="header-mobil-menu">
+                <li class="d-lg-none d-xxl-block">
+                  <a href="index.php">
+                    İşlerimiz
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="">
+                    Hizmetlerimiz
+                    <i class="fad fa-chevron-right menu-plus"></i>
+                  </a>
+                  <ul>
+                    <li class="">
+                      <a href="hizmetler/yazilim.php">
+                        Yazılım
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="hizmetler/webdizayn.php">
+                        Web Dizayn
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="hizmetler/seo.php">
+                        SEO
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="hizmetler/mobiluygulama.php">
+                        Mobil Uygulama
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="hizmetler/dijitaltasarim.php">
+                        Dijital Tasarım
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="hizmetler/pazarlama.php">
+                        Pazarlama
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class=" ">
+                  <a href="blog.php">
+                    Blog
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="iletisim.php">
+                    İletişim
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mobile-menu-title language-title">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <ul class="header-mobil-menu">
+                <li>
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="row header-row align-items-center">
+        <div class="col-auto logo">
+          <a href="index.php">
+            <img src="assets/images/logo.png" alt="USCEW LOGO">
+          </a>
+        </div>
+        <div class="col-auto ml-auto d-flex d-lg-none">
+          <a href="#" id="header-mobile-menu-switch" aria-label="admin/front/general.menu.open">
+            <i class="fad fa-bars" style="color:black;"></i>
+          </a>
+        </div>
+        <div class="col col-mr-auto align-items-center justify-content-center d-none d-lg-flex h-100">
+          <ul class="header-menu">
+            <li class="d-lg-none d-xxl-block">
+              <a href="index.php">
+                İşlerimiz
+              </a>
+            </li>
+            <li class="d-lg-none d-xxl-block">
+              <a href="hizmetlerimiz.php">
+                Hizmetlerimiz
+              </a>
+            </li>
+            <!--
+            <li class=" ">
+              <a href="">
+                Hizmetlerimiz
+              </a>
+              <ul>
+                <li class=" ">
+                  <a href="">
+                    Yazılım
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="">
+                    Web Dizayn
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="">
+                    Seo
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="">
+                    Mobil Uygulama
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="">
+                    Dijital Tasarım
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="">
+                    Pazarlama
+                  </a>
+                </li>
+              </ul>
+            </li>
+            -->
+            <li class=" ">
+              <a href="blog.php">
+                Blog
+              </a>
+            </li>
+            <li class=" ">
+              <a href="iletisim.php">
+                İletişim
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-auto align-items-center d-none d-lg-flex">
+          <ul class="header-menu header-language d-inline">
+            <li class="language-li">
+
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </header>
