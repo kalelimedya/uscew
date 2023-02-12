@@ -14,7 +14,7 @@ This script is wrtten by
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo $row["sitetitle"] ?></title>
+	<title> USCEW</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keyword" content="Biggidroid, Biggidroid simple php cms, php cms">
@@ -27,6 +27,20 @@ This script is wrtten by
 	<script src="../js/search.js"></script>
 
 </head>
+
+
+<style>
+.sitelogo {
+    height: 57px;
+    width: 159px;
+     background:#eeeeee00;
+    margin-top: 5px;
+    padding: 10px;
+     border-radius: 0%; 
+    border: 1px solid #eeeeee00;
+}
+
+</style>
 <body>
 <div class="container">
 	<!-- Welcome message to Admin -->
@@ -37,7 +51,7 @@ This script is wrtten by
 	<div class="header">
 		<!--Logo begin Here -->
 		<div class="logo">
-			<a href="../index.php"><img align="center" class="sitelogo" src="../image/<?php echo $row["sitelogo"] ?>"></a>
+			<a href="../index.php"><img align="center" class="sitelogo" src="assets/images/logo.png"></a>
 			<?php if (isset($_SESSION["admin"])) {
 				echo "" ?>
 				<br><small style="font-family: calibri;text-align: center;"><a href="editsite.php?id=<?php echo $row['id'] ?>">Edit logo</a></small>

@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost", "root", "", "blog") or die();
+$con = mysqli_connect("localhost", "root", "", "bloguscew") or die();
 $id = $_GET['id'];
 mysqli_query($con, "DELETE FROM post WHERE id='$id' ");
 mysqli_query($con, "DELETE FROM comment WHERE postid='$id' ");

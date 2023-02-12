@@ -24,6 +24,8 @@ if (isset($_POST['submit'])) {
 
 
 ?>
+<script src="ckeditor/ckeditor.js"></script>
+<script type="text/javasciprt" src="ckeditor/ckeditor.js"> </script>
 <style type="text/css">
 	form{
 		width: 50%;
@@ -79,9 +81,17 @@ if (isset($_POST['submit'])) {
       		          	<option value="Lifestyle">Lifestyle</option>
       		          	<option value="Sport">Sport</option>
       		          </select>
-      		          <p>Post content:</p>
-				    <textarea name="text" style="font-family: calibri;">Enter content...</textarea>
-				    <input type="submit" value="Post" name="submit">
+					  					  <?php
+    $editor_data = $_POST[ 'content' ];
+?>
+      		          <p>Gönderi içeriği:</p>
+				    <textarea name="text" class="form-control"  id="content" ></textarea>
+				    <input type="submit" value="Gönder" name="submit">
+					            <script>
+                // Replace the <textarea id="editor1"> with a CKEditor 4
+                // instance, using default configuration.
+                CKEDITOR.replace( 'content' );
+            </script>
 				</form>
 				</div>
 				<div class="sidebar">
