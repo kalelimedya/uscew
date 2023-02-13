@@ -263,30 +263,25 @@
               <h3>Yararlı linkler</h3>
             </div>
             <ul>
-              <li><a href="#">Anasayfa</a></li>
-              <li><a href="#">Hakkımızda</a></li>
-              <li><a href="#">Hizmetler</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">İletişim</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Our Services</a></li>
-              <li><a href="#">Expert Team</a></li>
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">Latest News</a></li>
+              <li><a href="index.php">Anasayfa</a></li>
+              <li><a href="hizmetlerimiz.php">Hizmetlerimiz</a></li>
+              <li><a href="blog.php">Blog</a></li>
+              <li><a href="iletisim.php">İletişim</a></li>
             </ul>
           </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
           <div class="footer-widget">
             <div class="footer-widget-heading">
-              <h3>Subscribe</h3>
+              <h3>BÜLTEN ABONELİĞİ
+</h3>
             </div>
             <div class="footer-text mb-25">
-              <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+              <p>Yeni haberlerimizi öğrenmek için abone olmayı unutmayın, lütfen aşağıdaki formu doldurun..</p>
             </div>
             <div class="subscribe-form">
               <form action="#">
-                <input type="text" placeholder="Email Address">
+                <input type="text" placeholder="E-Posta">
                 <button><i class="fab fa-telegram-plane"></i></button>
               </form>
             </div>
@@ -308,11 +303,7 @@
         <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
           <div class="footer-menu">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Policy</a></li>
-              <li><a href="#">Contact</a></li>
+          Developed by Yiğithan&Eren
             </ul>
           </div>
         </div>
