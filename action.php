@@ -69,12 +69,12 @@ if (isset($_POST['submit_btn'])) {
     
      //Alıcılar
      $mail->setfrom('uscewyazilim@gmail.com', 'İletişim Formu');
-     $mail->addAddress($_POST['mail']);
-     $mail->addReplyTo($_POST['mail'], $_POST['name']);
+     $mail->addAddress('uscewyazilim@gmail.com');
+     $mail->addReplyTo('uscewyazilim@gmail.com');
      //İçerik
      $mail->isHTML(true);
      $mail->Subject = 'İletişim Formu.'.$_POST['business'];
-     $mail->Body = $_POST['message'];
+     $mail->Body = $_POST['message']."<br>"."Telefon Numarası:".$_POST['tel'];
     
      $mail->send();
      echo "Mesajınız İletildi --> ".$_POST['mail']."<br>";
