@@ -8,7 +8,7 @@ if (!isset($_SESSION["admin"])) {
 ?>
   <div class="more">
 
-  				<h2 class="h2admin">Your Post <a href="post.php"><small>Add New Post</small></a></h2>
+  				<h2 class="h2admin">Gönderi <a href="post.php"><small>Yeni Gönderi Ekle</small></a></h2>
 				<?php 
 				$query = mysqli_query($con, "SELECT * FROM post ORDER BY id DESC");
 				while ($row = mysqli_fetch_assoc($query)) {
@@ -33,15 +33,15 @@ if (!isset($_SESSION["admin"])) {
 					<?php echo $row['title']; ?>
 
 				</h3>
-				<small style="margin: 0px;background: black none repeat scroll 0% 0%;color: white;padding: 3px;font-size: 10px;">Category: <?php echo $row["category"]; ?></small>
-				<small style="margin: 0px;background: black none repeat scroll 0% 0%;color: white;padding: 3px;font-size: 10px;">Date: <?php echo $row["date"]; ?></small>
+				<small style="margin: 0px;background: black none repeat scroll 0% 0%;color: white;padding: 3px;font-size: 10px;">Kategori: <?php echo $row["category"]; ?></small>
+				<small style="margin: 0px;background: black none repeat scroll 0% 0%;color: white;padding: 3px;font-size: 10px;">Tarih: <?php echo $row["date"]; ?></small>
 				<p style="color: black;" >
 					<?php echo substr($row['text'],0,300)."..."; ?>
 				</p>	
 				</div>
 				
-				<p style="font-family: calibri; "><a style="background: blueviolet;padding: 5px;color: white;text-decoration: none;" href="../post.php?id=<?php echo $row['id'] ?>">Read More</a> <a style="background: blueviolet;padding: 5px;color: white;text-decoration: none;" href="edit.php?id=<?php echo $row['id'] ?>">Edit Post</a>
-				<a style="background: blueviolet;padding: 5px;color: white;text-decoration: none;" href="delete.php?id=<?php echo $row['id'] ?>">Delete</a></p>
+				<p style="font-family: calibri; "><a style="background: blueviolet;padding: 5px;color: white;text-decoration: none;" href="../post.php?id=<?php echo $row['id'] ?>">Gönderiyi Oku</a> <a style="background: blueviolet;padding: 5px;color: white;text-decoration: none;" href="edit.php?id=<?php echo $row['id'] ?>">Düzenle</a>
+				<a style="background: blueviolet;padding: 5px;color: white;text-decoration: none;" href="delete.php?id=<?php echo $row['id'] ?>">Sil</a></p>
 				
 				</div><br><hr><br>
 

@@ -76,9 +76,9 @@ include '../include/db.php';
 		<br>
 		<!-- Site navigation link begins here -->
 		<nav>
-			<a href="#">Anasayfa</a>|
-			<a href="#">Blog</a> |
+			<a href="index.php">Blog</a> |
 			<a href="projelerim.php">Projelerim</a> |
+			<a href="contact.php">İletişim</a> |
 			 
 		</nav>
 		<!-- Site navigation link ends here -->
