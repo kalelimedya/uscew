@@ -145,6 +145,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 	border-left:2px solid black;
 	transition: 1000ms all;
 }
+
+
+.header-menu>li>a {
+	color: black;
+}
 </style>
 
 
