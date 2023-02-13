@@ -39,15 +39,47 @@ if (isset($_POST['submit_btn'])) {
     } else {
         echo '<script>alert("Error in Google reCAPTACHA")</script>';
     }
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
     
-	$sql .= "INSERT INTO contact (name, mail, business,message,project,tel)
-    VALUES ('$name', '$mail', '$business','$message','$project','$tel')";
-
-    if ($con->multi_query($sql) === TRUE) {
-    echo "New records created successfully";
-    header("Location:index.php?durum=ok");
-    } else {
-    echo "Error: " . $sql . "<br>" . $con->error;
+    require 'PHPMailer/src/Exception.php';
+    require 'PHPMailer/src/PHPMailer.php';
+    require 'PHPMailer/src/SMTP.php';
+    
+    
+    $mail = new PHPMailer(true);
+    try {
+     //Server settings
+     $mail->CharSet = 'UTF-8';
+     $mail->SMTPDebug = 0; // debug on - off
+     $mail->isSMTP(); 
+     $mail->Host = 'smtp.gmail.com'; // SMTP sunucusu örnek : mail.alanadi.com
+     $mail->SMTPAuth = true; // SMTP Doğrulama
+     $mail->Username = 'uscewyazilim@gmail.com'; // Mail kullanıcı adı
+     $mail->Password = 'jtddwpcezgvefakz'; // Mail şifresi
+     $mail->SMTPSecure = 'ssl'; // Şifreleme
+     $mail->Port = 465; // SMTP Port
+    $mail->SMTPOptions = array(
+     'ssl' => array(
+     'verify_peer' => false,
+     'verify_peer_name' => false,
+     'allow_self_signed' => true
+     )
+    );
+    
+     //Alıcılar
+     $mail->setfrom('uscewyazilim@gmail.com', 'İletişim Formu');
+     $mail->addAddress($_POST['mail']);
+     $mail->addReplyTo($_POST['mail'], $_POST['name']);
+     //İçerik
+     $mail->isHTML(true);
+     $mail->Subject = 'İletişim Formu.'.$_POST['business'];
+     $mail->Body = $_POST['message'];
+    
+     $mail->send();
+     echo "Mesajınız İletildi --> ".$_POST['mail']."<br>";
+    } catch (Exception $e) {
+     echo 'Mesajınız İletilemedi. Hata: ', $mail->ErrorInfo;
     }
     exit;
 }
