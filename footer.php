@@ -310,6 +310,9 @@
       </div>
     </div>
   </div>
+  <a href="https://wa.me/+908503037441" class="fixed-whatsapp">
+<img src="storage/media/1463/whatsapp.svg" alt="">
+</a>
 </footer>
 
 
