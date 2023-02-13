@@ -59,6 +59,15 @@
 	font-size: 20px;
 	font-weight: 300;
 	text-decoration:none;
+ 
+  background-color: black;
+}
+.carousel-caption {
+  filter:blur(0.5px);
+    -o-filter:blur(0.5px);
+    -ms-filter:blur(0.5px);
+    -moz-filter:blur(0.5px);
+    -webkit-filter:blur(0.5px);
 }
 .carousel-action {
 	padding: 10px 0 30px;
@@ -73,8 +82,8 @@
 }
 .carousel-action .btn-primary {
 	border-color: black;
-	background: none;
-	color: #000;
+	background: black;
+	color: white;
   transition-property: all;
   transition-duration: 1000ms;
 }
@@ -237,9 +246,6 @@
 	text-decoration:none;
 }
 
-
-
-
 </style>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald:300,400" rel="stylesheet">
@@ -302,7 +308,9 @@
 						<img src="assets/images/tablet.jpg" alt="">
 						<div class="carousel-caption">
 							<h3>Dijital web tasarım ve reklam stüdyosu</h3>
-							<p>Pulvinar leo id risus pellentesque vestibulum. Sed diam libero, sodales eget cursus dolor.</p>
+				
+                <p>Pulvinar leo id risus pellentesque vestibulum. Sed diam libero, sodales eget cursus dolor.</p>
+             
 							<div class="carousel-action">
 								<a href="#" class="btn btn-primary">İletişim</a>
 							</div>
