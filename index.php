@@ -246,7 +246,25 @@
 	text-decoration:none;
 }
 
+.header-mobil-menu>li>a {
+   text-decoration: none;
+   color: white;
+}
 </style>
+
+
+<style>
+
+
+
+@media (max-width: 991.98px)
+.header-mobil-menu>li>a {
+   text-decoration: none;
+}
+
+
+</style>
+
 
 <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald:300,400" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
