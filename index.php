@@ -251,6 +251,12 @@
    text-decoration: none;
    color: white;
 }
+
+#header-mobile-menu-switch-close i {
+	
+	color: white;
+	
+}
 </style>
 
 
