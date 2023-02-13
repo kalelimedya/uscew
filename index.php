@@ -112,14 +112,21 @@
 
 .header-menu>li>a  {
 	text-decoration: none;
+	color: #2e073b;
 }
 
 .left-menu>li>a>span{
 	text-decoration: none;
+	
 }
 
 .left-menu>li>a {
 	text-decoration: none;
+	color: #2e073b;
+}
+
+.fixed-buttons a.up {
+		text-decoration: none;
 }
 </style>
 
