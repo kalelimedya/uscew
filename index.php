@@ -55,11 +55,9 @@
 	text-decoration:none;
 }
 .carousel-caption p {
-	background: black;
 	padding: 10px 20px;
 	font-size: 20px;
 	font-weight: 300;
-	text-decoration:none
 	text-decoration:none;
 }
 .carousel-action {
