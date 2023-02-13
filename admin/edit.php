@@ -80,7 +80,7 @@ if (isset($_SESSION["admin"])) {
                   		 <input style="display: none;" id="file" type="file" name="image" onchange="proccess(window.lastFile=this.files[0])">  
                            <div style="margin: 0px;padding: 0px;">
                              <!--Sample image uploaded begins HERE -->
-                             <p>Change post Image:</p>
+                             <p>Resmi Değiştir:</p>
                             <img id="image" style="width: 100%;height: auto;cursor: pointer;margin-left:0px;" class="ui centered large image" src="../image/<?php echo $row["image"] ?>"/>
                              <!--Sample image uploaded ends HERE -->
                           </div>
@@ -92,9 +92,9 @@ if (isset($_SESSION["admin"])) {
 		<p><?php if (isset($_POST["update"])) {
 						echo $posted;
 					} ?></p>
-					<p>Post Title:</p>
+					<p>Gönderi Başlığı:</p>
 				    <input type="text" name="title" placeholder="Enter your title" value="<?php echo $row["title"] ?>">
-				     <p>Post Category:</p>
+				     <p>Gönderi Kategori:</p>
       		          <select name="category" style="padding: 5px;background: blueviolet;color: white;margin-bottom: 5px;">
       		          	<option><?php echo $row["category"]; ?></option>
       		          	<option value="Technology">Technology</option>
@@ -102,11 +102,11 @@ if (isset($_SESSION["admin"])) {
       		          	<option value="Lifestyle">Lifestyle</option>
       		          	<option value="Sport">Sport</option>
       		          </select>
-      		          <p>Post Contents:</p>
+      		          <p>Gönderi Yazısı:</p>
       		          <textarea name="text" style="font-family: calibri;"><?php echo $row["text"] ?></textarea>
-			<input type="submit" name="update" value="Update Post">
+			<input type="submit" name="update" value="Güncelle">
 			<center style="margin-top: 5px;">
-				<a style="font-family: calibri; background: blueviolet;padding: 5px;color: white;text-decoration: none;" href="javascript:history.go(-1)">&larr; Go Back</a>
+				<a style="font-family: calibri; background: blueviolet;padding: 5px;color: white;text-decoration: none;" href="javascript:history.go(-1)">&larr; Geri Dön</a>
 			</center>
 		</p>
 	</form>

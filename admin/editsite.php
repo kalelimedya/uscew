@@ -77,12 +77,7 @@ if (isset($_SESSION["admin"])) {
 						<input type="hidden" value="999999999999999">
 					<label>
                   		 <input style="display: none;" id="file" type="file" name="image" onchange="proccess(window.lastFile=this.files[0])">  
-                           <div style="margin: 0px;padding: 0px;">
-                             <!--Sample image uploaded begins HERE -->
-                             <p>Site Logo:</p>
-                            <img id="image" style="width: 100%;height: auto;cursor: pointer;margin-left:0px;" class="ui centered large image" src="../image/<?php echo $row["sitelogo"] ?>"/>
-                             <!--Sample image uploaded ends HERE -->
-                          </div>
+                          
                   		     
       		          </label>
       		          <input type="submit" name="updatelogo" value="Update logo">
@@ -91,9 +86,9 @@ if (isset($_SESSION["admin"])) {
 		<p><?php if (isset($_POST["update"])) {
 						echo $posted;
 					} ?></p>
-					<p>Site Title:</p>
+					<p>Site Başlığı:</p>
 				    <input type="text" name="title" placeholder="Enter your title" value="<?php echo $row["sitetitle"] ?>">
-      		          <p>Site Tagline:</p>
+      		          <p>Site Tagları:</p>
       		          <textarea name="text"><?php echo $row["sitetagline"] ?></textarea>
 			<input type="submit" name="update" value="Update">
 			<center style="margin-top: 5px;">

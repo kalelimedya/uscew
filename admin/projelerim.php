@@ -8,7 +8,7 @@ if (!isset($_SESSION["admin"])) {
 ?>
   <div class="more">
 
-  				<h2 class="h2admin">Your Post <a href="projectadd.php"><small>Add New Post</small></a></h2>
+  				<h2 class="h2admin">Your Post <a href="projectadd.php"><small>Yeni Proje Ekle</small></a></h2>
 				<?php 
 				$query = mysqli_query($con, "SELECT * FROM project ORDER BY id DESC");
 				while ($row = mysqli_fetch_assoc($query)) {
@@ -39,7 +39,7 @@ if (!isset($_SESSION["admin"])) {
 				</p>	
 				</div>
 				
-				<a style="background: blueviolet;padding: 5px;color: white;text-decoration: none;" href="projectdelete.php?id=<?php echo $row['id'] ?>">Delete</a></p>
+				<a style="background: blueviolet;padding: 5px;color: white;text-decoration: none;" href="projectdelete.php?id=<?php echo $row['id'] ?>">Sil</a></p>
 				
 				</div><br><hr><br>
 

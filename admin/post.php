@@ -74,7 +74,7 @@ if (isset($_POST['submit'])) {
                           </div>
                   		     
       		          </label>
-      		          <p>Post Category:</p>
+      		          <p>Gönderi Kategorisi:</p>
       		          <select name="category" style="padding: 5px;background: blueviolet;color: white;margin-bottom: 5px;">
       		          	<option value="Technology">Technology</option>
       		          	<option value="Programming">Programming</option>
@@ -95,7 +95,7 @@ if (isset($_POST['submit'])) {
 				</form>
 				</div>
 				<div class="sidebar">
-					<h3 style="margin-top: 10px;padding-top: 0px;font-family: calibri;color:white;padding:5px;background: blueviolet">Recent Posts</h3>
+					<h3 style="margin-top: 10px;padding-top: 0px;font-family: calibri;color:white;padding:5px;background: blueviolet">Önceki Gönderiler</h3>
 					<?php 
 				
 				$query = mysqli_query($con, "SELECT * FROM post ORDER BY id DESC LIMIT 5");
@@ -131,14 +131,14 @@ if (isset($_POST['submit'])) {
 					<a style="background: blueviolet;
     padding: 2px;
     color: white;
-    text-decoration: none;font-size: 12px;" href="../post.php?id=<?php echo $row['id'] ?>">Read More</a> <a style="background: blueviolet;
+    text-decoration: none;font-size: 12px;" href="../post.php?id=<?php echo $row['id'] ?>">Gönderiyi Oku</a> <a style="background: blueviolet;
     padding: 2px;
     color: white;
-    text-decoration: none;font-size: 12px;" href="edit.php?id=<?php echo $row['id'] ?>">Edit Post</a>
+    text-decoration: none;font-size: 12px;" href="edit.php?id=<?php echo $row['id'] ?>">Gönderiyi Düzenle</a>
 				<a style="background: blueviolet;
     padding: 2px;
     color: white;
-    text-decoration: none;font-size: 12px;" href="delete.php?id=<?php echo $row['id'] ?>">Delete</a>
+    text-decoration: none;font-size: 12px;" href="delete.php?id=<?php echo $row['id'] ?>">Sil</a>
 				</p>	
 				</div>
 				
