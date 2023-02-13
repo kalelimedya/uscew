@@ -38,7 +38,7 @@ include '../include/db.php';
 <div class="container">
 	<!-- Welcome message to Admin -->
 		<?php if (isset($_SESSION["admin"])) { ?><p class="linktag"><a href="index.php">
-	Welcome <?php echo $_SESSION["user"]; ?> </a></p><?php
+	Hoş geldiniz <?php echo $_SESSION["user"]; ?> </a></p><?php
 }; ?>
 <!-- Welcome message to Admin ends here -->
 	<div class="header">
@@ -47,7 +47,7 @@ include '../include/db.php';
 			<a href="../index.php"><img align="center" class="sitelogo" src="assets/images/logo.png"></a>
 			<?php if (isset($_SESSION["admin"])) {
 				echo "" ?>
-				<br><small style="font-family: calibri;text-align: center;"><a href="editsite.php?id=<?php echo $row['id'] ?>">Edit logo</a></small>
+				<br><small style="font-family: calibri;text-align: center;"><a href="editsite.php?id=<?php echo $row['id'] ?>">Logoyu Düzenle</a></small>
 				<?php
 			"";} ?>
 		</div>
@@ -57,7 +57,7 @@ include '../include/db.php';
 			<h2><?php echo $row["sitetitle"] ?>
 				<?php if (isset($_SESSION["admin"])) {
 				echo "" ?>
-				<small style="font-family: calibri;text-align: center;font-size: 15px;"><a href="editsite.php?id=<?php echo $row['id'] ?>">Edit Title</a></small>
+				<small style="font-family: calibri;text-align: center;font-size: 15px;"><a href="editsite.php?id=<?php echo $row['id'] ?>">Başlığı Düzenle</a></small>
 				<?php
 			"";} ?>
 			</h2>
@@ -67,7 +67,7 @@ include '../include/db.php';
 			<span class="sitetagline"><?php echo $row["sitetagline"] ?>
 				<?php if (isset($_SESSION["admin"])) {
 				echo "" ?>
-				<small style="font-family: calibri;letter-spacing: normal;"><a href="editsite.php?id=<?php echo $row['id'] ?>">Edit Tagline</a></small>
+				<small style="font-family: calibri;letter-spacing: normal;"><a href="editsite.php?id=<?php echo $row['id'] ?>">Tagları Düzenle</a></small>
 				<?php
 			"";} ?>
 			</span>

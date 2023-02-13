@@ -1,6 +1,6 @@
 
 	<div class="footer">
-		<p>Copyright &copy; 2019 BiggiDroid Team - <a style="color: white;text-decoration: none;" href="https://www.adeleyeayodeji.com">Adeleye Ayodeji</a> | <a style="color: white;text-decoration: none;" href="../index.php">Homepage</a></p>
+		<p>Copyright &copy; 2023 Uscew - <a style="color: white;text-decoration: none;">developed by yigithan&eren</a> | <a style="color: white;text-decoration: none;" href="../index.php">Anasayfa</a></p>
 	</div>
 </div>
 	<?php if (isset($_SESSION["admin"])) { ?>
