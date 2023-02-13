@@ -1,8 +1,16 @@
 <?php
-    
+    include 'include/db.php';
 // Checking valid form is submitted or not
 if (isset($_POST['submit_btn'])) {
       
+    	// storing in database
+	$name = $_POST['name'];
+	$mail = $_POST['mail'];
+	$business = $_POST['business'];
+	$message = $_POST['message'];
+	$project = $_POST['project'];
+	$tel = $_POST['tel'];
+
     
     // Storing google recaptcha response
     // in $recaptcha variable
@@ -31,6 +39,16 @@ if (isset($_POST['submit_btn'])) {
     } else {
         echo '<script>alert("Error in Google reCAPTACHA")</script>';
     }
+    
+	$sql .= "INSERT INTO contact (name, mail, business,message,project,tel)
+    VALUES ('$name', '$mail', '$business','$message','$project','$tel')";
+
+    if ($con->multi_query($sql) === TRUE) {
+    echo "New records created successfully";
+    header("Location:index.php?durum=ok");
+    } else {
+    echo "Error: " . $sql . "<br>" . $con->error;
+    }
+    exit;
 }
-  
 ?>

@@ -4,17 +4,10 @@
     <h1>İletişim & Bize Ulaş</h1>
     <div class="row">
       <div class="col-6">
-        <form action="islemler/ajax.php" method="POST">
+        <form action="action.php" method="POST">
           <div class="row">
             <div class="col-11">
-              <input type="text" class="form-control" name="isim" autocomplete="off" placeholder="Adınız ve Soyadınız"
-                require>
-            </div>
-            <div class="col-1"></div>
-          </div>
-          <div class="row">
-            <div class="col-11">
-              <input type="text" class="form-control" name="firmaisim" autocomplete="off" placeholder="Firma İsmi"
+              <input type="text" class="form-control" name="name" autocomplete="off" placeholder="Adınız ve Soyadınız"
                 require>
             </div>
             <div class="col-1"></div>
@@ -28,21 +21,21 @@
           </div>
           <div class="row">
             <div class="col-11">
-              <input type="email" class="form-control" name="eposta" autocomplete="off" placeholder="E-Posta Adresi"
+              <input type="email" class="form-control" name="mail" autocomplete="off" placeholder="E-Posta Adresi"
                 require>
             </div>
             <div class="col-1"></div>
           </div>
           <div class="row">
             <div class="col-11">
-              <textarea type="text" class="form-control" name="mesaj" autocomplete="off" placeholder="Mesaj" rows="3"
+              <textarea type="text" class="form-control" name="message" autocomplete="off" placeholder="Mesaj" rows="3"
                 require></textarea>
             </div>
             <div class="col-1"></div>
           </div>
           <div class="row">
             <div class="col-11">
-              <button type="submit" class="button button-large button-pink-white">
+              <button type="submit" name="submit_btn" class="button button-large button-pink-white">
                 Gönder
               </button>
             </div>

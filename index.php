@@ -434,27 +434,27 @@ if (isset($_POST['submit_btn'])) {
       </section>
         <section class="information-section">
           <div class="container">
-            <h1 style="margin-bottom:30px;">Teklif Alın & Soru Sorun</h1>
+            <h1 style="margin-bottom:30px;font-weight: bolder;">Teklif Alın & Soru Sorun</h1>
             <div class="row">
               <div class="col-12">
                 <ul class="left-menu cs-menu-area">
                   <li>
                     <a href="#" class="smooth click-area">
                       <i class="before fad fa-chevron-double-right"></i>
-                      <span style="font-weight:bolder;">SORU SORUN</span>
+                      <span style="font-weight:bolder;">TEKLİF ALIN</span>
                       <div class="menu-open"></div>
                     </a>
                     <ul class="fr-view collapse-description">
                       <form action="action.php" method="POST">
                         <div class="row">
                             <div class="col-11">
-                              <input type="text" class="form-control form-control-2" name="isim" autocomplete="off" placeholder="Adınız ve Soyadınız" require>
+                              <input type="text" class="form-control form-control-2" name="name" autocomplete="off" placeholder="Adınız ve Soyadınız" require>
                             </div>
                             <div class="col-1"></div>
                         </div>
                         <div class="row">
                             <div class="col-11">
-                              <input type="text" class="form-control form-control-2" name="firmaisim" autocomplete="off" placeholder="Firma İsmi" require>
+                              <input type="text" class="form-control form-control-2" name="business" autocomplete="off" placeholder="Firma İsmi" require>
                             </div>
                             <div class="col-1"></div>
                         </div>
@@ -466,7 +466,7 @@ if (isset($_POST['submit_btn'])) {
                         </div>
                         <div class="row">
                             <div class="col-11">
-                              <input type="email" class="form-control form-control-2" name="eposta" autocomplete="off" placeholder="E-Posta Adresi" require>
+                              <input type="email" class="form-control form-control-2" name="mail" autocomplete="off" placeholder="E-Posta Adresi" require>
                             </div>
                             <div class="col-1"></div>
                         </div>
@@ -475,14 +475,14 @@ if (isset($_POST['submit_btn'])) {
 						   <div class="col-11">
 						  
 						  
-                                            <select name="proje" class="form-control form-control-2" id="proje">
-                                                <option value="">Lütfen seçiniz</option>
-                                                <option value="Andorid">Web Site Yapımı</option>
-                                                <option value="İOS">SEO</option>
-												<option value="Andorid">Mobil Uygulama Yapımı</option>
-                                                <option value="İOS">Sosyal Medya Yönetimi</option>
-												<option value="İOS">Dijital Tasarım</option>
-												<option value="İOS">Diğer</option>
+                                            <select name="project" required class="form-control form-control-2" id="proje">
+
+                                                <option value="Web Site Yapımı">Web Site Yapımı</option>
+                                                <option value="SEO">SEO</option>
+												                        <option value="Mobil Uygulama Yapımı">Mobil Uygulama Yapımı</option>
+                                                <option value="Sosyal Medya Yönetimi">Sosyal Medya Yönetimi</option>
+                                                <option value="Dijital Tasarım">Dijital Tasarım</option>
+                                                <option value="Diğer">Diğer</option>
                                             </select>
                                            <div class="col-1"></div>
 										
@@ -491,7 +491,7 @@ if (isset($_POST['submit_btn'])) {
 						
                         <div class="row">
                             <div class="col-11">
-                            <textarea type="text" class="form-control form-control-2" name="mesaj" autocomplete="off" placeholder="Mesaj" rows="3" require></textarea></div>
+                            <textarea type="text" class="form-control form-control-2" name="message" autocomplete="off" placeholder="Mesaj" rows="3" require></textarea></div>
                             <div class="col-1"></div>
                         </div>
 						<div class="row">
