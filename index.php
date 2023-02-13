@@ -88,8 +88,9 @@
   transition-duration: 1000ms;
 }
 .carousel-action .btn-primary:hover {
-	background: black;
+	background: white;
 	color: white;
+  color:black;
   border-color:black;
 }
 .carousel-action .btn-success {
