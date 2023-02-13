@@ -382,33 +382,26 @@
         <!-- item -->
       
           <!-- item -->
-        
-		<div class="achievement-cards-div">
-		<div class="certificate-card">
-		<div class="certificate-image-div">
-		<img src="assets/images/gomekan.png" alt="Google Code-In Logo" class="card-image"></div>
-		<div class="certificate-detail-div"><h5 class="card-title">GoMekan</h5>
-		<p class="card-subtitle">GoMekan web sitesi ve mobil uygulaması geliştirildi, kullanıma açıldı</p>
-		</div><div class="certificate-card-footer">
-		<span class="certificate-tag">Web Sitesi</span>
-		<span class="certificate-tag">Mobil Uygulama</span>
-		<span class="certificate-tag">Geliştirme</span></div>
-		</div><div class="certificate-card">
-		<div class="certificate-image-div">
-		<img src="assets/images/medyaloji.png" alt="Google Assistant Action Logo" class="card-image"></div>
-		<div class="certificate-detail-div"><h5 class="card-title">Medyaloji</h5>
-		<p class="card-subtitle">Türkiye’nin en büyük İnfluencer Pazarlama şirketi Mediaoloji’nin web sitesi teslim edildi, SEO çalışmaları devam etmekte.</p></div>
-		<div class="certificate-card-footer">
-		<span class="certificate-tag">Web Sitesi</span></div></div>
-		<div class="certificate-card"><div class="certificate-image-div">
-		<img src="assets/images/jobsangel.png" alt="PWA Logo" class="card-image"></div>
-		<div class="certificate-detail-div">
-		<h5 class="card-title">Jobsangel</h5>
-		<p class="card-subtitle">Jobsangel web sitesi A’dan Z’ye tasarlandı, hayata geçirildi.</p></div><div class="certificate-card-footer"><span class="certificate-tag">Certification</span>
-		<span class="certificate-tag">Web Sitesi</span>
-		</div>
-		</div></div>
-		
+          <div class="achievement-cards-div">
+          <?php
+						$query = mysqli_query($con, "SELECT * FROM project ORDER BY id ASC");
+						while ($row = mysqli_fetch_assoc($query)) {
+							?>
+                  <div class="certificate-card">
+                  <div class="certificate-image-div">
+                  <img src="assets/images/<?php echo $row["image"]; ?>" alt="Google Code-In Logo" class="card-image"></div>
+                  <div class="certificate-detail-div"><h5 class="card-title"><?php echo $row["title"]; ?></h5>
+                  <p class="card-subtitle"><?php echo $row["text"]; ?></p>
+                  </div><div class="certificate-card-footer">
+                  <span class="certificate-tag">Web Sitesi</span>
+                  <span class="certificate-tag">Mobil Uygulama</span>
+                  <span class="certificate-tag">Geliştirme</span></div>
+                  </div>
+									
+									<?php 
+						} ?> 
+            </div>
+	
 		
 		
            

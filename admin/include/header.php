@@ -1,13 +1,6 @@
 <?php session_start(); 
 include '../include/db.php';
-/*
-This script is wrtten by 
-	Author = BiggiDroid 
-	FacebookPage = https://www.facebook.com/biggidroid
-	Developer = Adeleye Ayodeji
-	Developer URL = https://www.adeleyeayodeji.com
-	WhatsApp = +2347034803384
-*/
+
 	$query = mysqli_query($con, "SELECT * FROM sitedetails");
 	$row = mysqli_fetch_assoc($query);
 ?>
@@ -83,16 +76,10 @@ This script is wrtten by
 		<br>
 		<!-- Site navigation link begins here -->
 		<nav>
-			<a href="#">Home</a> |
-		<?php
-		$query = mysqli_query($con, "SELECT * FROM post ORDER BY id ASC LIMIT 4");
-		while ($row = mysqli_fetch_assoc($query)) {
-			?>
-			<a href="../include/category.php?category=<?php echo $row['category'] ?>"><?php echo $row["category"]; ?></a> |
-			<?php 
-		} ?>
-			<a href="#">Contact</a> |
-			<a href="#">About US</a> 
+			<a href="#">Anasayfa</a>|
+			<a href="#">Blog</a> |
+			<a href="projelerim.php">Projelerim</a> |
+			 
 		</nav>
 		<!-- Site navigation link ends here -->
 	</div>
