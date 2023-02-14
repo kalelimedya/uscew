@@ -1,3 +1,11 @@
+
+<?php 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+//Your function Code 
+?>
+
+
 <?php
     include 'include/db.php';
 // Checking valid form is submitted or not
@@ -39,8 +47,8 @@ if (isset($_POST['submit_btn'])) {
     } else {
         echo '<script>alert("Error in Google reCAPTACHA")</script>';
     }
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
+
+
     
     require 'PHPMailer/src/Exception.php';
     require 'PHPMailer/src/PHPMailer.php';
@@ -53,10 +61,10 @@ if (isset($_POST['submit_btn'])) {
      $mail->CharSet = 'UTF-8';
      $mail->SMTPDebug = 0; // debug on - off
      $mail->isSMTP(); 
-     $mail->Host = 'smtp.gmail.com'; // SMTP sunucusu örnek : mail.alanadi.com
+     $mail->Host = 'mail.kalelimedya.com'; // SMTP sunucusu örnek : mail.alanadi.com
      $mail->SMTPAuth = true; // SMTP Doğrulama
-     $mail->Username = 'uscewyazilim@gmail.com'; // Mail kullanıcı adı
-     $mail->Password = 'jtddwpcezgvefakz'; // Mail şifresi
+     $mail->Username = 'erenekmekci@kalelimedya.com'; // Mail kullanıcı adı
+     $mail->Password = 'aliveli4950'; // Mail şifresi
      $mail->SMTPSecure = 'ssl'; // Şifreleme
      $mail->Port = 465; // SMTP Port
     $mail->SMTPOptions = array(
@@ -68,9 +76,9 @@ if (isset($_POST['submit_btn'])) {
     );
     
      //Alıcılar
-     $mail->setfrom('uscewyazilim@gmail.com', 'İletişim Formu');
-     $mail->addAddress('uscewyazilim@gmail.com');
-     $mail->addReplyTo('uscewyazilim@gmail.com');
+     $mail->setfrom('erenekmekci@kalelimedya.com', 'İletişim Formu');
+     $mail->addAddress('erenekmekci@kalelimedya.com');
+     $mail->addReplyTo('erenekmekci@kalelimedya.com');
      //İçerik
      $mail->isHTML(true);
      $mail->Subject = 'İletişim Formu.'.$_POST['business'];
