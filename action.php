@@ -1,4 +1,3 @@
-
 <?php 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -55,35 +54,33 @@ if (isset($_POST['submit_btn'])) {
         $mail->isHTML(true);
         $mail->Subject = 'Proje:'.$_POST['project'];
         $mail->Body ="İsim ve Soyadı:".$_POST['name']."<br>".  "Mesaj:".$_POST['message']."<br> <br>"."Telefon Numarası:".$_POST['tel']."<br>". "Proje:".$_POST['project']."<br>"."Şirket:".$_POST['business'];
-        
-
-        if($mail->send()) {
-            echo "Mesajınız İletildi --> ".$_POST['mail']."<br>";
-            
-            $sql .= "INSERT INTO contact (name, mail, business, message, project, tel)
-            VALUES ('$name', '$email', '$business','$message','$project','$tel')";
-            
-                    if ($con->multi_query($sql) === TRUE) {
-                    echo "New records created successfully";
-                    header("Location:index.php?durum=ok");
-                    } else {
-                    echo "Error: " . $sql . "<br>" . $con->error;
-                    }
-                        
-        } else {
+		//Success
+    if ($mail->Send()) { 
+        echo "Mesajınız İletildi --> ".$_POST['mail']."<br>";
+			header("Location:index.php?durum=ok");
+		}
+        } catch (Exception $e) {
         echo 'Mesajınız İletilemedi. Hata: ', $mail->ErrorInfo;
         }
-           
+
+        $sql .= "INSERT INTO contact (name, mail, business, message, project, tel)
+        VALUES ('$name', '$email', '$business','$message','$project','$tel')";
+        
+                if ($con->multi_query($sql) === TRUE) {
+                echo "New records created successfully";
+				header("Location:index.php?durum=ok");
+                } else {
+                echo "Error: " . $sql . "<br>" . $con->error;
+                }
+                                
              
 
 
-            
-    } 
-} else {
-   echo "Hata";
-   header("Location:index.php?durum=bos");
+                    
+                   
+    } else {
+       echo "Hata";
+    }
+    exit;
 }
-}
-exit;
 ?>
-
