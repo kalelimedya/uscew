@@ -13,7 +13,7 @@ if (isset($_POST['submit_btn'])) {
       
     	// storing in database
 	$name = $_POST['name'];
-	$mail = $_POST['mail'];
+	$email = $_POST['mail'];
 	$business = $_POST['business'];
 	$message = $_POST['message'];
 	$project = $_POST['project'];
@@ -91,7 +91,7 @@ if (isset($_POST['submit_btn'])) {
      echo 'Mesajınız İletilemedi. Hata: ', $mail->ErrorInfo;
     }
     $sql = "INSERT INTO contact (name, mail, business,message, project,tel)
-        VALUES ('$_POST['name']', '$_POST['mail']','$_POST['business']', '$_POST['message']','$_POST['tel']')";
+        VALUES ('$name', '$email','$business', '$message','$tel')";
 
         if ($con->query($sql) === TRUE) {
             header("Location:index.php");
