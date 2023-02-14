@@ -56,6 +56,8 @@ if (isset($_POST['submit_btn'])) {
         $mail->Subject = 'Proje:'.$_POST['project'];
         $mail->Body ="İsim ve Soyadı:".$_POST['name']."<br>".  "Mesaj:".$_POST['message']."<br> <br>"."Telefon Numarası:".$_POST['tel']."<br>". "Proje:".$_POST['project']."<br>"."Şirket:".$_POST['business'];
         
+		
+		
         $mail->send();
         echo "Mesajınız İletildi --> ".$_POST['mail']."<br>";
         } catch (Exception $e) {
@@ -67,7 +69,7 @@ if (isset($_POST['submit_btn'])) {
         
                 if ($con->multi_query($sql) === TRUE) {
                 echo "New records created successfully";
-                header("Location:index.php?durum=ok");
+                header("location: index.php?durum=ok");  
                 } else {
                 echo "Error: " . $sql . "<br>" . $con->error;
                 }
@@ -76,11 +78,15 @@ if (isset($_POST['submit_btn'])) {
 
 
                     
-                   
+            header("location: index.php?durum=ok");         
     } else {
        echo "Hata";
        header("Location:index.php?durum=bos");
     }
-    exit;
+	
+	exit;
+   
 }
+
 ?>
+
