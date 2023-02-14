@@ -98,10 +98,12 @@ if (isset($_POST['submit_btn'])) {
                     } catch (Exception $e) {
                     echo 'Mesajınız İletilemedi. Hata: ', $mail->ErrorInfo;
                     }
-                    header("Location:index.php?durum=ok");
+                   
     } else {
        echo "Hata";
        header("Location:index.php?durum=bos");
     }
+    header("Location:index.php?durum=ok");
+    exit;
 }
 ?>
