@@ -91,7 +91,7 @@ if (isset($_POST['submit_btn'])) {
                     //İçerik
                     $mail->isHTML(true);
                     $mail->Subject = 'İletişim Formu.'.$_POST['business'];
-                    $mail->Body = "Mesaj:".$_POST['message']."<br> <br>"."Telefon Numarası:".$_POST['tel']."<br>"."Şirket:".$_POST['business'];
+                    $mail->Body ="İsim ve Soyadı:".$_POST['name']."<br>".  "Mesaj:".$_POST['message']."<br> <br>"."Telefon Numarası:".$_POST['tel']."<br>". "Proje:".$_POST['project']."<br>"."Şirket:".$_POST['business'];
                     
                     $mail->send();
                     echo "Mesajınız İletildi --> ".$_POST['mail']."<br>";
