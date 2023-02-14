@@ -101,6 +101,7 @@ if (isset($_POST['submit_btn'])) {
                     header("Location:index.php?durum=ok");
     } else {
        echo "Hata";
+       header("Location:index.php?durum=bos");
     }
 }
 ?>
