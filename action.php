@@ -19,12 +19,11 @@ if (isset($_POST['submit_btn'])) {
 
     if($_POST["name"]!="" || $_POST["mail"]!="" ||  $_POST["message"]!="" || $_POST["project"]!="" || $_POST["tel"]!="") {
 
-        $sql .= "INSERT INTO contact (name, mail, business, message, project, tel)
+        $sql = "INSERT INTO contact (name, mail, business, message, project, tel)
         VALUES ('$name', '$email', '$business','$message','$project','$tel')";
         
                 if ($con->multi_query($sql) === TRUE) {
-                    require 'vendor/autoload.php';
-
+                    
                         //Create an instance; passing `true` enables exceptions
                         $mail = new PHPMailer(true);
 
@@ -55,6 +54,7 @@ if (isset($_POST['submit_btn'])) {
                         } catch (Exception $e) {
                             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
                         }
+
                 } else {
                 echo "Error: " . $sql . "<br>" . $con->error;
                 }           
