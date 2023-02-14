@@ -19,7 +19,7 @@ if (isset($_POST['submit_btn'])) {
 	$project = $_POST['project'];
 	$tel = $_POST['tel'];
 
-    if(!isset($name) OR !isset($mail) OR !isset($message) OR !isset($project) OR !isset($tel)) {
+    if($_POST["name"]!="" || $_POST["mail"]!="" ||  $_POST["message"]!="" || $_POST["project"]!="" || $_POST["tel"]!="") {
         
     // Storing google recaptcha response
     // in $recaptcha variable
@@ -98,9 +98,9 @@ if (isset($_POST['submit_btn'])) {
         } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
         }
-    exit;
     } else {
         header("Location:index.php?durum=no");
     }
+    exit;
 }
 ?>
