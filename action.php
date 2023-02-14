@@ -93,7 +93,7 @@ if (isset($_POST['submit_btn'])) {
     } catch (Exception $e) {
      echo 'Mesajınız İletilemedi. Hata: ', $mail->ErrorInfo;
     }
-    $sql = "INSERT INTO contact (name, mail, business,message, project,tel)
+    $sql .= "INSERT INTO contact (name, mail, business,message, project,tel)
         VALUES ('$name', '$email','$business', '$message','$tel')";
 
         if ($con->query($sql) === TRUE) {
