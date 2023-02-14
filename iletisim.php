@@ -7,28 +7,28 @@
         <form action="action.php" method="POST">
           <div class="row">
             <div class="col-11">
-              <input type="text" class="form-control" name="name" autocomplete="off" placeholder="Adınız ve Soyadınız"
+              <input type="text" class="form-control" name="name" required autocomplete="off" placeholder="Adınız ve Soyadınız"
                 require>
             </div>
             <div class="col-1"></div>
           </div>
           <div class="row">
             <div class="col-11">
-              <input type="text" class="form-control" name="tel" autocomplete="off" placeholder="Telefon Numarası"
+              <input type="text" class="form-control" name="tel" required autocomplete="off" placeholder="Telefon Numarası"
                 require>
             </div>
             <div class="col-1"></div>
           </div>
           <div class="row">
             <div class="col-11">
-              <input type="email" class="form-control" name="mail" autocomplete="off" placeholder="E-Posta Adresi"
+              <input type="email" class="form-control" name="mail" required autocomplete="off" placeholder="E-Posta Adresi"
                 require>
             </div>
             <div class="col-1"></div>
           </div>
           <div class="row">
             <div class="col-11">
-              <textarea type="text" class="form-control" name="message" autocomplete="off" placeholder="Mesaj" rows="3"
+              <textarea type="text" class="form-control" name="message" required autocomplete="off" placeholder="Mesaj" rows="3"
                 require></textarea>
             </div>
             <div class="col-1"></div>

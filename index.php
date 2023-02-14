@@ -448,25 +448,25 @@ if (isset($_POST['submit_btn'])) {
                       <form action="action.php" method="POST">
                         <div class="row">
                             <div class="col-11">
-                              <input type="text" class="form-control form-control-2" name="name" autocomplete="off" placeholder="Adınız ve Soyadınız" require>
+                              <input type="text" class="form-control form-control-2" name="name" required autocomplete="off" placeholder="Adınız ve Soyadınız">
                             </div>
                             <div class="col-1"></div>
                         </div>
                         <div class="row">
                             <div class="col-11">
-                              <input type="text" class="form-control form-control-2" name="business" autocomplete="off" placeholder="Firma İsmi" require>
+                              <input type="text" class="form-control form-control-2" name="business" required autocomplete="off" placeholder="Firma İsmi">
                             </div>
                             <div class="col-1"></div>
                         </div>
                         <div class="row">
                             <div class="col-11">
-                              <input type="text" class="form-control form-control-2" name="tel" autocomplete="off" placeholder="Telefon Numarası" require>
+                              <input type="text" class="form-control form-control-2" name="tel" required autocomplete="off" placeholder="Telefon Numarası">
                             </div>
                             <div class="col-1"></div>
                         </div>
                         <div class="row">
                             <div class="col-11">
-                              <input type="email" class="form-control form-control-2" name="mail" autocomplete="off" placeholder="E-Posta Adresi" require>
+                              <input type="email" class="form-control form-control-2" name="mail" required autocomplete="off" placeholder="E-Posta Adresi">
                             </div>
                             <div class="col-1"></div>
                         </div>
