@@ -22,7 +22,7 @@ if (isset($_POST['submit_btn'])) {
         $sql = "INSERT INTO contact (name, mail, business, message, project, tel)
         VALUES ('$name', '$email', '$business','$message','$project','$tel')";
         
-                if ($con->multi_query($sql) == TRUE) {
+                if ($con->multi_query($sql) === TRUE) {
                     header("Location:index.php");
 
 
