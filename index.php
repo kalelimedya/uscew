@@ -448,25 +448,25 @@ if (isset($_POST['submit_btn'])) {
                       <form action="action.php" method="POST">
                         <div class="row">
                             <div class="col-11">
-                              <input type="text" class="form-control form-control-2" name="name" required autocomplete="off" placeholder="Adınız ve Soyadınız">
+                              <input type="text" class="form-control form-control-2" name="name"  autocomplete="on" placeholder="Adınız ve Soyadınız" required>
                             </div>
                             <div class="col-1"></div>
                         </div>
                         <div class="row">
                             <div class="col-11">
-                              <input type="text" class="form-control form-control-2" name="business" required autocomplete="off" placeholder="Firma İsmi">
+                              <input type="text" class="form-control form-control-2" name="business"  autocomplete="on" placeholder="Firma İsmi" required>
                             </div>
                             <div class="col-1"></div>
                         </div>
                         <div class="row">
                             <div class="col-11">
-                              <input type="text" class="form-control form-control-2" name="tel" required autocomplete="off" placeholder="Telefon Numarası">
+                              <input type="text" class="form-control form-control-2" name="tel"  autocomplete="on" placeholder="Telefon Numarası" required>
                             </div>
                             <div class="col-1"></div>
                         </div>
                         <div class="row">
                             <div class="col-11">
-                              <input type="email" class="form-control form-control-2" name="mail" required autocomplete="off" placeholder="E-Posta Adresi">
+                              <input type="email" class="form-control form-control-2" name="mail"  autocomplete="on" placeholder="E-Posta Adresi" required>
                             </div>
                             <div class="col-1"></div>
                         </div>
@@ -475,7 +475,7 @@ if (isset($_POST['submit_btn'])) {
 						   <div class="col-11">
 						  
 						  
-                                            <select name="project" required class="form-control form-control-2" id="proje">
+                                            <select name="project" required class="form-control form-control-2" id="proje" required>
 
                                                 <option value="Web Site Yapımı">Web Site Yapımı</option>
                                                 <option value="SEO">SEO</option>
@@ -491,7 +491,7 @@ if (isset($_POST['submit_btn'])) {
 						
                         <div class="row">
                             <div class="col-11">
-                            <textarea type="text" class="form-control form-control-2" name="message" autocomplete="off" placeholder="Mesaj" rows="3" require></textarea></div>
+                            <textarea type="text" class="form-control form-control-2" name="message" autocomplete="off" placeholder="Mesaj" rows="3" required></textarea></div>
                             <div class="col-1"></div>
                         </div>
 						<div class="row">
