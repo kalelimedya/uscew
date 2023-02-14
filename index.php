@@ -497,7 +497,7 @@ if (isset($_POST['submit_btn'])) {
 						<div class="row">
 						
 						<div class="g-recaptcha" 
-                data-sitekey="6Lc4AXEkAAAAAPATpOV7Uo4hYo5AIgCUtWZPr7E4">
+                data-sitekey="6Lc4AXEkAAAAAKnRe7SePnJkWvx2Fy_l5f50uHQN">
             </div>
 						
 						</div>
