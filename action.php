@@ -57,10 +57,10 @@ if (isset($_POST['submit_btn'])) {
                                 $mail->isHTML(true);
                                 $mail->Subject = 'Proje:'.$_POST['project'];
                                 $mail->Body ="İsim ve Soyadı:".$_POST['name']."<br>".  "Mesaj:".$_POST['message']."<br> <br>"."Telefon Numarası:".$_POST['tel']."<br>". "Proje:".$_POST['project']."<br>"."Şirket:".$_POST['business'];
-                                $mail->send();
-                                echo "Mesajınız İletildi --> ".$_POST['mail']."<br>";
-                                } catch (Exception $e) {
-                                echo 'Mesajınız İletilemedi. Hata: ', $mail->ErrorInfo;
+                                if ($mail->send()) {
+                                    header("location:iletisim.php?durum=ok");
+                                } else {
+                                    header("location:iletisim.php?durum=no");
                                 }
 
 
