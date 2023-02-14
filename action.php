@@ -56,31 +56,32 @@ if (isset($_POST['submit_btn'])) {
         $mail->Subject = 'Proje:'.$_POST['project'];
         $mail->Body ="İsim ve Soyadı:".$_POST['name']."<br>".  "Mesaj:".$_POST['message']."<br> <br>"."Telefon Numarası:".$_POST['tel']."<br>". "Proje:".$_POST['project']."<br>"."Şirket:".$_POST['business'];
         
-        $mail->send();
-        echo "Mesajınız İletildi --> ".$_POST['mail']."<br>";
-        } catch (Exception $e) {
+        if($mail->send()) {
+            echo "Mesajınız İletildi --> ".$_POST['mail']."<br>";
+            
+            $sql .= "INSERT INTO contact (name, mail, business, message, project, tel)
+            VALUES ('$name', '$email', '$business','$message','$project','$tel')";
+            
+                    if ($con->multi_query($sql) === TRUE) {
+                    echo "New records created successfully";
+                    header("Location:index.php?durum=ok");
+                    } else {
+                    echo "Error: " . $sql . "<br>" . $con->error;
+                    }
+                        
+        } else {
         echo 'Mesajınız İletilemedi. Hata: ', $mail->ErrorInfo;
         }
-
-        $sql .= "INSERT INTO contact (name, mail, business, message, project, tel)
-        VALUES ('$name', '$email', '$business','$message','$project','$tel')";
-        
-                if ($con->multi_query($sql) === TRUE) {
-                echo "New records created successfully";
-                header("Location:index.php?durum=ok");
-                } else {
-                echo "Error: " . $sql . "<br>" . $con->error;
-                }
-                                
+           
              
 
 
-                    
-                   
-    } else {
-       echo "Hata";
-       header("Location:index.php?durum=bos");
-    }
-    exit;
+            
+    } 
+} else {
+   echo "Hata";
+   header("Location:index.php?durum=bos");
 }
+}
+exit;
 ?>
