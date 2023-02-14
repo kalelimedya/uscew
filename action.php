@@ -19,7 +19,10 @@ if (isset($_POST['submit_btn'])) {
 	$project = $_POST['project'];
 	$tel = $_POST['tel'];
 
-    if($_POST["name"]!="" || $_POST["mail"]!="" ||  $_POST["message"]!="" || $_POST["project"]!="" || $_POST["tel"]!="") {
+    if($_POST["name"]=="" || $_POST["mail"]=="" ||  $_POST["message"]=="" || $_POST["project"]=="" || $_POST["tel"]=="") {
+        header("Location:index.php?durum=no");
+    } else {
+       
         
     // Storing google recaptcha response
     // in $recaptcha variable
@@ -96,10 +99,8 @@ if (isset($_POST['submit_btn'])) {
         if ($con->query($sql) === TRUE) {
             header("Location:index.php");
         } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql . "<br>" . $con->error;
         }
-    } else {
-        header("Location:index.php?durum=no");
     }
     exit;
 }
