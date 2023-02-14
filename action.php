@@ -76,19 +76,27 @@ if (isset($_POST['submit_btn'])) {
     );
     
      //Alıcılar
-     $mail->setfrom('erenekmekci@kalelimedya.com', 'İletişim Formu');
+     $mail->setfrom('erenekmekci@kalelimedya.com', 'Soru Sorun&Teklif Al');
      $mail->addAddress('erenekmekci@kalelimedya.com');
      $mail->addReplyTo('erenekmekci@kalelimedya.com');
      //İçerik
      $mail->isHTML(true);
      $mail->Subject = 'İletişim Formu.'.$_POST['business'];
-     $mail->Body = $_POST['message']."<br>"."Telefon Numarası:".$_POST['tel'];
+     $mail->Body = "Mesaj:".$_POST['message']."<br> <br>"."Telefon Numarası:".$_POST['tel']."<br>"."Şirket:".$_POST['business'];
     
      $mail->send();
      echo "Mesajınız İletildi --> ".$_POST['mail']."<br>";
     } catch (Exception $e) {
      echo 'Mesajınız İletilemedi. Hata: ', $mail->ErrorInfo;
     }
+    $sql = "INSERT INTO contact (name, mail, business,message, project,tel)
+        VALUES ('$_POST['name']', '$_POST['mail']','$_POST['business']', '$_POST['message']','$_POST['tel']')";
+
+        if ($con->query($sql) === TRUE) {
+            header("Location:index.php");
+        } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+        }
     exit;
 }
 ?>
