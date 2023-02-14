@@ -497,7 +497,7 @@ if (isset($_POST['submit_btn'])) {
 						<div class="row">
 						
 						<div class="g-recaptcha" 
-                data-sitekey="6Lc4AXEkAAAAAKnRe7SePnJkWvx2Fy_l5f50uHQN">
+                data-sitekey="6Lf_F3wkAAAAAEeJCw-ShjnmYCU1RC-1RGHUF5gD">
             </div>
 						
 						</div>
@@ -520,5 +520,6 @@ if (isset($_POST['submit_btn'])) {
             </div>
           </div>
         </section>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
         
         <?php include 'footer.php'; ?>
