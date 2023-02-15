@@ -15,6 +15,7 @@ This script is wrtten by
 	$query = mysqli_query($con, "SELECT * FROM sitedetails");
 	$row = mysqli_fetch_assoc($query);
 	
+
 ?>
 
 <html lang="tr">
@@ -29,6 +30,7 @@ This script is wrtten by
   <script src="https://kit.fontawesome.com/77b52c446f.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lc4AXEkAAAAAPATpOV7Uo4hYo5AIgCUtWZPr7E4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
     grecaptcha.enterprise.ready(function () {
       grecaptcha.enterprise.execute('6Lc4AXEkAAAAAPATpOV7Uo4hYo5AIgCUtWZPr7E4', { action: 'login' }).then(function (token) {
@@ -46,6 +48,7 @@ This script is wrtten by
 
 
 </head>
+
 
 <body>
   <div class="mobile-menu-shadow">

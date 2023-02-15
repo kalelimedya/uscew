@@ -1,4 +1,9 @@
 <?php include 'header.php'; ?>
+
+<?php if(@$_GET["durum"]=="ok") { ?>
+<script>Swal.fire('Mesajınız başarılı bir şekilde gönderildi.', '', 'success')</script>
+<?php } ?>
+
 <section style="background-color:#fafafa;margin-bottom:30px;">
   <div class="container" style="padding-top:20px;">
     <h1>İletişim & Bize Ulaş</h1>
