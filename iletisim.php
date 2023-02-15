@@ -4,6 +4,11 @@
 <script>Swal.fire('Mesajınız başarılı bir şekilde gönderildi.', '', 'success')</script>
 <?php } ?>
 
+
+<?php if(@$_GET["durum"]=="no") { ?>
+<script>Swal.fire('Lütfen CAPTCHA kutusunu işaretleyin.', '', 'error')</script>
+<?php } ?>
+
 <section style="background-color:#fafafa;margin-bottom:30px;">
   <div class="container" style="padding-top:20px;">
     <h1>İletişim & Bize Ulaş</h1>
@@ -38,6 +43,13 @@
             </div>
             <div class="col-1"></div>
           </div>
+		  	  <div class="row">
+						
+						<div class="g-recaptcha" 
+                data-sitekey="6LcjmK0eAAAAAClFgo2ACdu1HxnudSeE7bMoLqpY">
+            </div>
+						
+						</div>
           <div class="row">
             <div class="col-11">
               <button type="submit" name="submit_btn" class="button button-large button-pink-white">
@@ -47,6 +59,7 @@
             <div class="col-1">
             </div>
           </div>
+	
         </form>
       </div>
       <div class="col-6">
@@ -59,4 +72,5 @@
     </div>
   </div>
 </section>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <?php include 'footer.php'; ?>

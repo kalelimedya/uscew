@@ -7,6 +7,22 @@ use PHPMailer\PHPMailer\Exception;
 
 <?php
     include 'include/db.php';
+	
+	
+	
+	$captcha;
+if (isset($_POST['g-recaptcha-response'])) {
+    $captcha = $_POST['g-recaptcha-response'];
+}
+// Checking For correct reCAPTCHA
+$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=SECRETKEY&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']);
+if (!$captcha || $response.success == false) {
+    echo "Your CAPTCHA response was wrong.";
+	header("location:iletisim.php?durum=no");
+    exit ;
+}
+
+	
 if (isset($_POST['submit_btn'])) {
       
     	// storing in database
@@ -21,6 +37,8 @@ if (isset($_POST['submit_btn'])) {
 
         $sql = "INSERT INTO contact (name, mail, business, message, project, tel)
         VALUES ('$name', '$email', '$business','$message','$project','$tel')";
+		
+		
         
                 if ($con->multi_query($sql) === TRUE) {
                     
@@ -57,7 +75,10 @@ if (isset($_POST['submit_btn'])) {
                                 $mail->isHTML(true);
                                 $mail->Subject = 'Proje:'.$_POST['project'];
                                 $mail->Body ="İsim ve Soyadı:".$_POST['name']."<br>".  "Mesaj:".$_POST['message']."<br> <br>"."Telefon Numarası:".$_POST['tel']."<br>". "Proje:".$_POST['project']."<br>"."Şirket:".$_POST['business'];
-                                 $mail->send();
+                                
+
+
+								$mail->send();
                                 echo "Mesajınız İletildi --> ".$_POST['mail']."<br>";
 								 header("location:iletisim.php?durum=ok");
                                 } catch (Exception $e) {
