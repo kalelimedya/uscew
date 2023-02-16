@@ -268,7 +268,13 @@
 .header-mobil-menu>li>a {
    text-decoration: none;
 }
-
+.baslik-2 span {
+  font-family: DEGRADE;
+   font-size: 72px;
+  background: -webkit-linear-gradient(45deg, #ff9100, #ffbb00 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 </style>
 
@@ -285,10 +291,10 @@
       <div class="row">
         <div class="col-12 col-lg">
           <div class="row">
-            <p class="col-12 title scaled-p">
-           Dijital çözüm ortağınız </p>
+            <p class="col-12 title scaled-p baslik-2">
+           <span>Dijital çözüm ortağınız.</span></p>
             <div class="col-12 description">
-            Web Site Yapımı, Mobil Uygulama Yapımı, SEO, Sosyal Medya Yönetimi, Dijital Tasarım gibi alanlardaki ihtiyaçlarınız için buradayız.</div>
+            <h2 style="font-weight:bolder;">Web Site Yapımı, Mobil Uygulama Yapımı, SEO, Sosyal Medya Yönetimi, Dijital Tasarım gibi alanlardaki ihtiyaçlarınız için buradayız.</h2></div>
             <div class="col-12 mt-5">
               <!--
               <a href="" class="button button-gray-black">

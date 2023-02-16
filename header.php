@@ -31,6 +31,11 @@ This script is wrtten by
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lc4AXEkAAAAAPATpOV7Uo4hYo5AIgCUtWZPr7E4"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
   <script>
     grecaptcha.enterprise.ready(function () {
       grecaptcha.enterprise.execute('6Lc4AXEkAAAAAPATpOV7Uo4hYo5AIgCUtWZPr7E4', { action: 'login' }).then(function (token) {
@@ -43,6 +48,9 @@ This script is wrtten by
   <style>
     .grecaptcha-badge {
       display: none;
+    }
+    * {
+      font-family: Montserrat;
     }
   </style>
 
