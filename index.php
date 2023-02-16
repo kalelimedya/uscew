@@ -294,7 +294,7 @@
             <p class="col-12 title scaled-p baslik-2">
            <span>Dijital çözüm ortağınız.</span></p>
             <div class="col-12 description">
-            <h2 style="font-weight:bolder;">Web Site Yapımı, Mobil Uygulama Yapımı, SEO, Sosyal Medya Yönetimi, Dijital Tasarım gibi alanlardaki ihtiyaçlarınız için buradayız.</h2></div>
+            <div><b>Web Site Yapımı, Mobil Uygulama Yapımı, SEO, Sosyal Medya Yönetimi, Dijital Tasarım gibi alanlardaki ihtiyaçlarınız için buradayız.</b></div></div>
             <div class="col-12 mt-5">
               <!--
               <a href="" class="button button-gray-black">
