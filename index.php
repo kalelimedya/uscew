@@ -473,8 +473,8 @@
                   <div class="certificate-card">
                   <div class="certificate-image-div">
                   <img src="assets/images/<?php echo $row["image"]; ?>" alt="Google Code-In Logo" class="card-image"></div>
-                  <div class="certificate-detail-div"><h5 class="card-title"><?php echo $row["title"]; ?></h5>
-                  <p class="card-subtitle"><?php echo $row["text"]; ?></p>
+                  <div class="certificate-detail-div"><h5 class="card-title" style="font-weight: bolder;"><?php echo $row["title"]; ?></h5>
+                  <p class="card-subtitle" style="font-size: 18px;color:black;"><?php echo $row["text"]; ?></p>
                   </div><div class="certificate-card-footer">
                   <span class="certificate-tag">Web Sitesi</span>
                   <span class="certificate-tag">Mobil Uygulama</span>
