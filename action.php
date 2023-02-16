@@ -68,9 +68,9 @@ if (isset($_POST['submit_btn'])) {
                                 );
                                 
                                 //Alıcılar
-                                $mail->setfrom('erenekmekci@kalelimedya.com', 'Soru Sorun&Teklif Al');
-                                $mail->addAddress('erenekmekci@kalelimedya.com');
-                                $mail->addReplyTo('erenekmekci@kalelimedya.com');
+                                $mail->setfrom('uscewyazilim@gmail.com', 'Soru Sorun&Teklif Al');
+                                $mail->addAddress('uscewyazilim@gmail.com');
+                                $mail->addReplyTo('uscewyazilim@gmail.com');
                                 //İçerik
                                 $mail->isHTML(true);
                                 $mail->Subject = 'Proje:'.$_POST['project'];
