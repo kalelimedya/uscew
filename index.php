@@ -284,6 +284,18 @@
 }
 
 
+.cloud2 {
+   position: absolute;
+    left: 0%;
+    bottom: -1876px
+    -webkit-filter: blur(60px);
+    filter: blur(60px);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
 </style>
 
 
@@ -517,7 +529,10 @@ if (isset($_POST['submit_btn'])) {
       </section>
         <section class="information-section">
           <div class="container">
-            <h1 style="margin-bottom:30px;font-weight: bolder;">Teklif Alın & Soru Sorun</h1>
+		  <div class="cloud2">
+		  <div data-w-id="09c6b4f3-a66b-7fc4-2412-ab27d8a5d99a" class="lottie-footer" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/632b845203cf40e09d13ecb4/632b845203cf4091fb13ece3_Lottie%20Footer.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="17" data-duration="0" style="opacity: 1; animation: cloudBig 5s linear infinite;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 248" width="1200" height="248" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);"><defs><clipPath id="__lottie_element_11"><rect width="1200" height="248" x="0" y="0"></rect></clipPath><linearGradient id="__lottie_element_15" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="508.0140075683594" y1="83.11299896240234" x2="668.4669799804688" y2="242.5279998779297"><stop offset="0%" stop-color="rgb(255,122,34)"></stop><stop offset="100%" stop-color="rgb(255,74,185)"></stop></linearGradient><linearGradient id="__lottie_element_19" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="831.052978515625" y1="143.25" x2="883.4329833984375" y2="322.8340148925781"><stop offset="0%" stop-color="rgb(246,211,101)"></stop><stop offset="100%" stop-color="rgb(255,121,82)"></stop></linearGradient><linearGradient id="__lottie_element_23" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="383.5" y1="248" x2="321.74700927734375" y2="109.65899658203125"><stop offset="0%" stop-color="rgb(102,166,255)"></stop><stop offset="100%" stop-color="rgb(137,247,254)"></stop></linearGradient></defs><g clip-path="url(#__lottie_element_11)"><g transform="matrix(1,0,0,1,-8.80120849609375,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="url(#__lottie_element_15)" fill-opacity="1" d=" M548.0844116210938,69.3511962890625 C472.8674621582031,83.01471710205078 470.33892822265625,11.457941055297852 410.6321716308594,80.3216323852539 C361.8324279785156,132.7738800048828 336.02899169921875,229.34100341796875 334.6502380371094,248.0019989013672 C334.6502380371094,248.0019989013672 926.402099609375,248.0019989013672 926.402099609375,248.0019989013672 C912.85009765625,198.1269989013672 881.703369140625,176.90243530273438 840.297607421875,147.1084442138672 C788.9036254882812,110.12744140625 686.5181884765625,46.35304260253906 548.0844116210938,69.3511962890625 C548.0844116210938,69.3511962890625 548.0844116210938,69.3511962890625 548.0844116210938,69.3511962890625z"></path></g></g><g transform="matrix(1,0,0,1,36.19891357421875,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="url(#__lottie_element_19)" fill-opacity="1" d=" M1048.0751953125,93.99445343017578 C972.9336547851562,64.97245788574219 925.4083251953125,118.67768096923828 857.7443237304688,162.36668395996094 C826.8373413085938,182.3226776123047 719.7428588867188,212.9530029296875 709.6318359375,248.0019989013672 C709.6318359375,248.00399780273438 1140.7869873046875,247.9980010986328 1140.7869873046875,248.0019989013672 C1101.1964111328125,191.28411865234375 1094.795166015625,112.03845977783203 1048.0751953125,93.99445343017578 C1048.0751953125,93.99445343017578 1048.0751953125,93.99445343017578 1048.0751953125,93.99445343017578z"></path></g></g><g transform="matrix(1,0,0,1,0.6605224609375,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="url(#__lottie_element_23)" fill-opacity="1" d=" M328.1084289550781,76.1006851196289 C236.12892150878906,89.43597412109375 62.26787185668945,199.55836486816406 58.987064361572266,248 C58.987064361572266,248 572.4448852539062,248 572.4448852539062,248 C598.6098022460938,174.00738525390625 556.1510009765625,124.79133605957031 513.4762573242188,98.3401107788086 C470.8007507324219,71.88888549804688 420.93707275390625,62.46448516845703 328.1084289550781,76.1006851196289 C328.1084289550781,76.1006851196289 328.1084289550781,76.1006851196289 328.1084289550781,76.1006851196289z"></path></g></g></g></svg></div>
+           </div>
+		   <h1 style="margin-bottom:30px;font-weight: bolder;">Teklif Alın & Soru Sorun</h1>
             <div class="row">
               <div class="col-12">
                 <ul class="left-menu cs-menu-area">
