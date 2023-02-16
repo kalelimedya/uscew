@@ -271,7 +271,7 @@
 .baslik-2 span {
   font-family: DEGRADE;
    font-size: 72px;
-  background: -webkit-linear-gradient(45deg, #ff9100, #ffbb00 80%);
+  background: -webkit-linear-gradient(45deg, #ff8000, #ffbb00 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -332,6 +332,11 @@
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#myCarousel" data-slide-to="1"></li>
 					<li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+          <li data-target="#myCarousel" data-slide-to="7"></li>
 				</ol>   
 				<!-- Wrapper for carousel items -->
 				<div class="carousel-inner">
@@ -366,7 +371,47 @@
               <a href="#" class="btn btn-primary">İletişim</a>
 							</div>
 						</div>
-					</div>	
+					</div>
+          <div class="item">
+            <img src="assets/images/slider2.webp" alt="">
+            <div class="carousel-caption">
+              <h3>Amazing Digital Experience</h3>             
+              <p>Nullam hendrerit justo non leo aliquet imperdiet. Etiam sagittis lectus condime dapibus.</p>
+              <div class="carousel-action">
+              <a href="#" class="btn btn-primary">İletişim</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/slider3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>Live Monitoring Tools</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu pellentesque sem tempor.</p>
+              <div class="carousel-action">
+              <a href="#" class="btn btn-primary">İletişim</a>
+              </div>
+            </div>
+          </div>  
+          <div class="item">
+            <img src="assets/images/slider2.webp" alt="">
+            <div class="carousel-caption">
+              <h3>Amazing Digital Experience</h3>             
+              <p>Nullam hendrerit justo non leo aliquet imperdiet. Etiam sagittis lectus condime dapibus.</p>
+              <div class="carousel-action">
+              <a href="#" class="btn btn-primary">İletişim</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/slider3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>Live Monitoring Tools</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu pellentesque sem tempor.</p>
+              <div class="carousel-action">
+              <a href="#" class="btn btn-primary">İletişim</a>
+              </div>
+            </div>
+          </div>  	
 				</div>
 				<!-- Carousel controls -->
 				<a class="carousel-control left" href="#myCarousel" data-slide="prev">
