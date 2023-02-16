@@ -25,6 +25,7 @@ This script is wrtten by
   <meta charset="utf-8">
   <meta name="description" content="Tanıtım">
   <meta name="keywords" content="anahtar kelime">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="assets/front/css/style.css">
   <link rel="stylesheet" href="assets/front/css/style2.css">
   <script src="https://kit.fontawesome.com/77b52c446f.js" crossorigin="anonymous"></script>

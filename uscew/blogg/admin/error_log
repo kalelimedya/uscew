@@ -1,0 +1,7 @@
+[07-Nov-2022 16:28:17 Europe/Istanbul] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'kalelim1_blog'@'localhost' to database 'kalelim1_blog' in /home/kalelim1/erhankaleli.com/blogg/include/db.php on line 7
+[07-Nov-2022 16:28:18 Europe/Istanbul] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'kalelim1_blog'@'localhost' to database 'kalelim1_blog' in /home/kalelim1/erhankaleli.com/blogg/include/db.php on line 7
+[07-Nov-2022 16:29:58 Europe/Istanbul] PHP Notice:  session_start(): A session had already been started - ignoring in /home/kalelim1/erhankaleli.com/blogg/admin/login.php on line 13
+[07-Nov-2022 16:29:58 Europe/Istanbul] PHP Notice:  Undefined variable: message in /home/kalelim1/erhankaleli.com/blogg/admin/login.php on line 47
+[07-Nov-2022 17:53:36 Europe/Istanbul] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/kalelim1/erhankaleli.com/blogg/admin/delete.php on line 2
+[07-Nov-2022 17:53:44 Europe/Istanbul] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/kalelim1/erhankaleli.com/blogg/admin/delete.php on line 2
+[07-Nov-2022 17:53:46 Europe/Istanbul] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/kalelim1/erhankaleli.com/blogg/admin/delete.php on line 2
